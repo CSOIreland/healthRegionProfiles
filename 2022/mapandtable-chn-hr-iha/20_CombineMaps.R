@@ -33,7 +33,7 @@ Map <- leaflet(options = leafletOptions(zoomControl = T)) %>%
                 # Highlight fill parameters
                 fillColor = "blue", 
                 fillOpacity = 0.1), 
-              popup = paste0("<b>Health Region: </b>", HR$NAME,"<br>",  EDMapSpatial$Report,"<br>"),
+              popup = paste0("<b>Health Region: </b>", HR$NAME,"<br>",  HR$Report,"<br>"),
               group = "Health Region")%>%
   addPolygons(data=IHA, 
               weight = 2, 
@@ -43,7 +43,7 @@ Map <- leaflet(options = leafletOptions(zoomControl = T)) %>%
                 weight = 3, color = "white",
                 # Highlight fill parameters
                 fillColor = "blue", fillOpacity = 0.1), 
-              popup = paste0("<b>IHA: </b>", IHA$IHA.x,"<br>",  EDMapSpatial$Report,"<br>"),
+              popup = paste0("<b>IHA: </b>", IHA$IHA.x,"<br>",  IHA$Report,"<br>"),
               group = "IHA")%>%
   addPolygons(data=CHN, 
               weight = 2, 
@@ -53,7 +53,7 @@ Map <- leaflet(options = leafletOptions(zoomControl = T)) %>%
                 weight = 3, color = "white",
                 # Highlight fill parameters
                 fillColor = "blue", fillOpacity = 0.1), 
-              popup = paste0("<b>CHN: </b>", CHN$CHN,"<br>",  EDMapSpatial$Report,"<br>"),
+              popup = paste0("<b>CHN: </b>", CHN$CHN,"<br>",  CHN$Report,"<br>"),
               group = "CHN")%>%
   addLayersControl(
     baseGroups = c("Health Region", "IHA","CHN"),
