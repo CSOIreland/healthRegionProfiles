@@ -1,0 +1,933 @@
+\documentclass{article}
+\usepackage[table]{xcolor}
+\usepackage{titlepic}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{enumitem}% http://ctan.org/pkg/enumerate
+\usepackage{rotating} 
+\usepackage{float}
+\usepackage{multirow}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titling}
+\usepackage{capt-of}
+\usepackage{siunitx}
+%\usepackage{arydshln}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{colortbl}
+%\usepackage[justification=centering]{caption}
+%\usepackage{caption}
+\sisetup{group-separator = {,}, group-minimum-digits = 4}
+\definecolor{CSONavy}{HTML}{405381}
+\hypersetup{
+    colorlinks,
+    linkcolor={black!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\urlstyle{same}
+%\nocite{*}
+%\setlength{\droptitle}{-4.5em}
+
+%\titlepic{\includegraphics{../figures/CSO_Logo.png}}
+\title{CHN Health Profile - South Limerick (IHA: HSE Clare and Limerick County ;  Health Region: HSE Midwest) }
+%\date{\vspHRe{-5ex}}
+\date{Census 2022}
+\author{CSO, Ireland  (\url{http://www.cso.ie)}}
+
+\newcolumntype{T}{>{\raggedleft\arraybackslash}m{1.7cm}}
+\newcolumntype{O}{>{\centering\arraybackslash}m{3.4cm}}
+\newcolumntype{M}{>{\raggedleft\arraybackslash}m{3cm}}
+\newcolumntype{A}{>{\raggedright\arraybackslash}m{9.5cm}}
+\newcolumntype{S}{>{\raggedleft\arraybackslash}m{1.4cm}}
+\newcolumntype{K}{>{\raggedright\arraybackslash}m{7.5cm}}
+
+\usepackage{Sweave}
+\begin{document}
+\input{47-south-limerick_hse-midwest-concordance}
+%\includegraphics{../figures/CSO_Logo.png}
+%\begin{minipage}{\linewidth}
+
+\begin{figure}
+	\centering
+\includegraphics[width =75mm]{../figures/CSO_Logo.png}
+\end{figure}
+
+				 
+		   
+						  
+														  
+																																													
+												 
+			 
+\maketitle
+					
+													   
+				 
+						 
+																																																																											   
+				 
+				  
+  \pagebreak
+    	    \tableofcontents
+%\end{minipage}
+
+\pagebreak
+
+
+\section{Key Points}
+
+
+\begin{itemize}
+
+\item The \textbf{Age Dependency Ratio} of this CHN is  \textbf{57.5}. This compares to 53.2 nationally. The Age Dependency Ratio is the amount of people outside of working age (0-14 and 65+) per 100 people of working age (15-64). 
+
+\item South Limerick has a total of \textbf{\num{62922}} \textbf{persons} and  \textbf{\num{15930}} \textbf{families} living in private households.
+
+\item There are a total of \textbf{\num{12499} persons aged 0-14} in this CHN and \textbf{\num{10462} persons aged over 65.} 
+
+\item There are a total of \textbf{\num{13169}} persons \textbf{living with a disability} in this CHN, representing \textbf{20.9 percent} of the population. This compares with  21.5 percent nationally
+
+\item \textbf{\num{977}} people in this CHN have \textbf{bad or very bad general health}. This represents \textbf{1.6 percent} of the population. 1.7 percent of the population have bad or very bad general health nationally. 
+
+\item There are a total of \textbf{\num{3852} carers} in this CHN, representing \textbf{6.1 percent} of the population. This compares with 5.8 percent of the population that are carers nationally. 
+
+\item \textbf{11.4 percent} of this CHN \textbf{smoke tobacco products}. 13.1 percent of people nationally smoke tobacco products
+
+\item There are \textbf{\num{621} short term unemployed} and \textbf{\num{885} long term unemployed} people in this CHN. These represent 1.2 and 1.8 percent of the population respectively.
+
+\item  \textbf{2.9 percent} of the population of South Limerick are \textbf{unskilled}. 3.1 percent of people in the state are unskilled.
+
+\item \textbf{22.4 percent} of those aged 15+ in this CHN have a \textbf{highest level of education of lower secondary or lower}. This compares with 23 percent nationally. 
+
+\item \textbf{20.6 percent} of families with children in this CHN have \textbf{lone parents}. This stands at 24.8 nationally.
+
+\item \textbf{14.8 percent} of this CHN were \textbf{born outside Ireland} (20 percent nationally).
+
+\item \textbf{Households rented from a Local Authority} comprise \textbf{4.2 percent} of households in this CHN.This stands at 8.3 percent nationally
+
+\end{itemize}
+
+\pagebreak
+
+\section{Population} 
+\label{sect:Pop}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 100mm]{../figures/PyramidPlot.pdf}
+	\caption{Persons by Age Group and Gender for South Limerick; Census 2022.}
+	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
+	\end{figure}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{lSSSSSSSSSS}
+  \hline
+ \textbf{Age} & \multicolumn{2}{c}{\textbf{Females}} & \multicolumn{2}{c}{\textbf{Males }} & \multicolumn{4}{c}{\textbf{Both Sexes}}  \\ 
+\cline{6-9}\\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{Persons}} & \emph{\textbf{\% (CHN)}} & \emph{\textbf{\% (IHA)}}& \emph{\textbf{\% (State)}}\\
+  \hline
+  0-14   & 6154 &  19.4 & 6345 & 20.3 & 12499 &19.9 & 19.7& 19.7 \\
+  15-64  & 20071 & 63.4 & 19890 & 63.6 & 39961&63.5& 63.0  &65.3\\
+  65+ & 5417 & 17.1 & 5045 & 16.1 &10462 &16.6 & 17.2& 15.1 \\
+ \hline
+  Age 0-4  & 1737& 5.5& 1797 & 5.7& 3534 & 5.6 & 5.7&  5.7 \\
+  
+  Age 5-9  & 2097& 6.6& 2159 & 6.9& 4256 & 6.8 & 6.7&  6.7 \\
+
+  Age 10-14  & 2320& 7.3& 2389 & 7.6& 4709 & 7.5 & 7.4&  7.3 \\
+
+  Age 15-19  & 1989& 6.3& 2124 & 6.8& 4113 & 6.5 & 6.7& 6.6 \\
+
+  Age 20-24  & 1595& 5.0& 1749 & 5.6& 3344 & 5.3 & 5.1&  6.0 \\
+
+  Age 25-29  & 1616& 5.1& 1598 & 5.1& 3214 & 5.1& 4.7 & 5.7 \\
+
+  Age 30-34  & 1880& 5.9& 1659 & 5.3& 3539 & 5.6 & 5.4&  6.5 \\
+
+  Age 35-39  & 2302& 7.3& 2072 & 6.6& 4374 & 7.0 & 6.7&  7.4 \\
+
+  Age 40-44  & 2592& 8.2& 2446 & 7.8& 5038 & 8.0 & 7.6&  8.0 \\
+  
+    Age 45-49  & 2309& 7.3& 2327 & 7.4& 4636 & 7.4 & 7.4&  7.3 \\
+  
+    Age 50-54  & 2087& 6.6& 2237 & 7.2& 4324 & 6.9 & 7.1&  6.6 \\
+  
+    Age 55-59  & 1957& 6.2& 1921 & 6.1& 3878 & 6.2 & 6.5&  6.0 \\
+  
+    Age 60-64  & 1744& 5.5& 1757 & 5.6& 3501 & 5.6 & 5.9&  5.3 \\
+  
+    Age 65-69  & 1624& 5.1& 1608 & 5.1& 3232 & 5.1 & 5.3&  4.6 \\
+  
+    Age 70-74  & 1426& 4.5& 1457 & 4.7& 2883 & 4.6 & 4.6&  3.9 \\
+  
+    Age 75-79  & 1093& 3.5& 1010 & 3.2& 2103 & 3.3 & 3.5&  3.0 \\
+  
+    Age 80-84  & 665& 2.1& 608 & 1.9& 1273 & 2.0 & 2.1&  1.9\\
+  
+    Age 85 and over  & 609& 1.9& 362 & 1.2& 971 & 1.5 & 1.7 & 1.6 \\
+  
+    All Ages  & 31642& 100.0& 31280 & 100.0& 62922 & 100.0 & 100.0& 100.0 \\
+      \hline 
+    \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T1T1AED}{https://data.cso.ie/table/SAP2022T1T1AED}} & &
+\end{tabular}
+\caption{Population Breakdown by Age and Sex for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region (HR) and State are provided for comparison purposes.}
+\end{table}
+\begin{itemize}
+\item This CHN ranks  33  out of 96 regarding the percentage of persons aged 0 - 14, while it ranks  2 out of 4 CHNs in its IHA
+\item This CHN ranks  33 out of 96 regarding the percentage of persons aged 65+, while it ranks   2 out of 4 CHNs in its IHA
+\end{itemize}
+\pagebreak
+
+
+\section{Disability}\label{sect:Disability}
+
+\begin{itemize}
+\item This CHN ranks  33 out of 96 regarding the percentage of males with a disability, while it ranks  4 out of 4 CHNs in its IHA
+\item This CHN ranks  35 out of 96 regarding the percentage of females with a disability, while it ranks   2 out of 4 CHNs in its IHA.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 130mm]{../figures/DisED.pdf}
+	\caption{Percentage of Population with any Disability by Age Group for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
+	\end{figure}
+
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{lTTTTTT}
+  \hline
+ & \multicolumn{3}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-4} \\
+  \textbf{Age Group} & \textbf{Population} & \multicolumn{4}{c}{\textbf{With any Disability}} \\
+ \cline{3-7}\\
+& \emph{\textbf{Persons}} & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}}& \emph{\textbf{\%}}\\
+  \hline
+Males & \num{31280} & \num{6420}  & 20.5  & 20.9 & 21.7 & 20.9\\
+Females & \num{31642} & \num{6749}  & 21.3  & 21.6& 22.6& 22.2\\
+Both Sexes & \num{62922} & \num{13169}  & 20.9  & 21.6& 22.6& 21.5 \\
+   \hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/F4004}{https://data.cso.ie/table/F4004}} & 
+\end{tabular}
+\caption{Population with any Disability by Age Group for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are provided for comparison purposes.}
+\end{table}
+
+\pagebreak
+
+\section{General Health}\label{sect:GenHealth}
+\begin{itemize}
+\item  This CHN ranks  17 out of 96 regarding the percentage of the population with bad or very bad General Health, while it ranks   3 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 150mm]{../figures/GenED.pdf}
+	\caption{Population Breakdown (\%) by General Health for South Limerick; IHA, Health Region and State;  Census 2022.}
+	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
+	\end{figure}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{lTTTTT}
+  \hline
+\textbf{General Health} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}}& \emph{\textbf{\%}} \\
+  \hline
+Very Good& \num{33889} &53.9
+&52.2
+&50.8 &53.2 \\
+Good& \num{19001} &30.2 &31.1 &30.5 &29.7\\
+Fair& \num{5326} &8.5 &9.0 &9.2 &8.6\\
+Bad& \num{788} &1.3 &1.4 &1.5 &1.4\\
+Very Bad& \num{189} &0.3 &0.3 &0.4 &0.3\\
+Not Stated& \num{3729} &5.9 &6.0 &7.7 &6.7\\
+Total& \num{62922} &100.0 &100.0 &100.0 &100.0\\
+   \hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T12T3ED}{https://data.cso.ie/table/SAP2022T12T3ED}} & 
+\end{tabular}
+\caption{Population by General Health for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table}
+\pagebreak
+
+\section{Carers}\label{sect:Carers}
+\begin{itemize}
+\item This CHN ranks  10 out of 96 regarding the percentage of males that are carers, while it ranks   4 out of 4 CHNs in its IHA.
+\item This CHN ranks  13 out of 96 regarding the percentage of females that are carers, while it ranks   2 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 150mm]{../figures/CareED.pdf}
+	\caption{Carers as a Percentage of the Population of Males/Females/Both Sexes for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
+	\end{figure}
+	\begin{table}[!h]	
+\centering
+	\begin{tabular}{lTTTTTT}
+  \hline
+ & \multicolumn{3}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-4} \\
+  \textbf{Age Group} & \textbf{Population} & \multicolumn{5}{c}{\textbf{Carers}} \\
+ \cline{3-7}\\
+& \emph{\textbf{Persons}} & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}}& \emph{\textbf{\%}} & \emph{\textbf{\%}}\\
+  \hline
+Males & \num{31280} & \num{1536}  & 4.9  & 5.2  & 5.0 & 2.3 \\
+Females & \num{31642} & \num{2316}  & 7.3  & 7.4 & 7.2 & 3.5 \\
+Both Sexes & \num{62922} & \num{3852}  & 6.1  & 6.3& 6.1 & 5.8 \\
+     \hline
+       \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T2ED}{https://data.cso.ie/table/SAP2022T12T2ED}} 
+\end{tabular}
+
+\caption{Carers by Sex for South Limerick; Census 2022. Percentage Breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+
+
+
+\pagebreak
+
+\section{Volunteers}\label{sect:Volunteers}
+\begin{itemize}
+\item This CHN ranks  19 out of 96 regarding the percentage of the population that volunteer, while it ranks  3 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 150mm]{../figures/VolunteerED.pdf}
+	\caption{Volunteers as a Percentage of the Population for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
+	\end{figure}
+	
+	
+\begin{table}[!h]	
+\centering
+	\begin{tabular}{lTTTTTT}
+  \hline
+ & \multicolumn{3}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-4} \\
+  & \textbf{Population} & \multicolumn{5}{c}{\textbf{Volunteers}} \\
+ \cline{3-7}\\
+& \emph{\textbf{Persons}} & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}}& \emph{\textbf{\%}} & \emph{\textbf{\%}}\\
+  \hline 
+& 62922 & 9645  & 15.3  & 15.8   & 14.8 & 13.8 \\
+
+     \hline
+       \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T7T1ED}} 
+\end{tabular}
+
+\caption{Volunteers for South Limerick; Census 2022. Percentage Breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+
+\pagebreak
+
+\section{Smoking}\label{sect:Smoking}
+\begin{itemize}
+\item This CHN ranks  40 out of 96 regarding the percentage of the population who smoke (daily and occasionally), while it ranks   4 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 120mm]{../figures/SmokingED.pdf}
+	\caption{Percentage of the Population who Smoke tobacco Products (Daily and Occasionally) for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
+	\end{figure}
+	
+	
+\begin{table}[!h]	
+\centering
+	\begin{tabular}{lTTTTTT}
+  \hline
+  \textbf{Smoking Status} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} \\
+  \hline
+Smoke tobacco Products (Daily and Occasionally)& \num{7168} &11.4 &12.4&13.1 &13.1 \\
+Don't Smoke tobacco Products (Never and have given up)& \num{51645} &82.1 &80.9&78.4 &79.4 \\
+Smoking Status Not Stated& \num{4109} &6.5 &6.8&8.4 &7.5 \\
+All Persons & 62922 & 100.0 & 100.0  & 100.0  & 100.0\\
+     \hline
+      \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T4ED}{https://data.cso.ie/table/SAP2022T12T4ED}} 
+\end{tabular}
+
+\caption{Smoking Status of South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+    
+  
+\pagebreak
+\section{Principal Economic Status}\label{sect:PES}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 140mm]{../figures/PESED.pdf}
+	\caption{Percentage of Population Aged 15+ by Principal Economic Status for South Limerick, IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+
+\begin{table}[h]	
+\centering
+		\begin{tabular}{lTTTTTT}
+  \hline
+  \textbf{Principal Economic Status} & \multicolumn{2}{c}{\textbf{South Limerick}}& \textbf{IHA} & \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} \\
+  \hline
+At Work & \num{28644} &56.8
+&55.3
+&54.0 &56.1 \\
+Looking for first regular job & \num{248} &0.5 &0.7&0.8 &0.8 \\
+Short term unemployed & \num{621} &1.2 &1.5&1.6 &1.7 \\
+Long term unemployed & \num{885} &1.8 &2.2&2.5 &2.6 \\
+Student & \num{5518} &10.9
+&10.5&11.7 &11.1 \\
+ Looking after home/family & \num{3248} &6.4 &6.6&6.5 &6.6 \\
+Retired & \num{8700} &17.3 &17.9 &17.2 &15.9 \\
+Unable to work due to permanent sickness or disability & \num{2348} &4.7 &4.7&5.2 &4.6 \\
+Other & \num{211} &0.4 &0.6 &0.6 &0.7 \\
+Total & \num{50423} &100.0 &100.0 &100.0 &100.0 \\
+\hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T8T1ED}{https://data.cso.ie/table/SAP2022T8T1ED}} &
+\end{tabular}
+\caption{Population aged 15+ by Principal Economic Status for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+\pagebreak
+\begin{itemize}
+\item This CHN ranks  39 out of 96 regarding the percentage of the population that are unemployed, while it ranks   4 out of 4 CHNs in its IHA.
+\end{itemize}
+\pagebreak
+
+\section{Social Class}\label{sect:SC}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 140mm]{../figures/SocialClassED.pdf}
+	\caption{Percentage of Population Aged 15+ by Social Class for South Limerick, IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+
+\begin{table}[h]	
+\centering
+		\begin{tabular}{lTTTTTT}
+  \hline
+  \textbf{Social Class} & \multicolumn{2}{c}{\textbf{South Limerick}}  & \textbf{IHA} & \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} \\
+  \hline
+Professional workers & \num{6995} & 11.1 & 9.0& 8.8& 9.3\\
+Managerial and technical & \num{20458} & 32.5 & 31.0& 29.1& 30.7\\
+Non-manual & \num{10119} & 16.1 & 15.9& 15.8& 16.2\\
+Skilled manual & \num{8107} & 12.9 & 13.8& 13.1& 12.9\\
+Semi-skilled & \num{6557} & 10.4 & 11.6& 11.3& 11.2\\
+Unskilled & \num{1825} & 2.9 & 3.2& 3.2& 3.1\\
+All others gainfully occupied and unknown & \num{8861} & 14.1 & 15.4& 18.7& 16.6\\
+Total & \num{62922} & 100.0 & 100.0& 100.0& 100.0\\
+\hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T9T1ED}{https://data.cso.ie/table/SAP2022T9T1ED}} &
+\end{tabular}
+
+\caption{Population aged 15+ by Social Class for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+\pagebreak
+\begin{itemize}
+\item This CHN ranks  20 out of 96 regarding the percentage of the population aged 15+ that are classified as unskilled, while it ranks   3 out of 4 CHNs in its IHA.
+\item This CHN ranks  20 out of 96 regarding the percentage of the population aged 15+ that are classified as professional workers, while it ranks   1 out of 4 CHNs in its IHA.
+\end{itemize}
+\pagebreak
+\section{Education}\label{sect:Edu}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 120mm]{../figures/EduED.pdf}
+	\caption{Percentage of Population Aged 15+ by Highest Level of Education Completed for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+\begin{table}[h]	
+\centering
+	\begin{tabular}{lTTTTT}
+  \hline
+  \textbf{Highest Level of Education Completed} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} \\
+  \hline
+No formal education & \num{717} &1.7 &2.1&2.2 &2.4 \\
+Primary education & \num{2823} &6.8 &7.6 &7.7 &7.4 \\
+Lower secondary & \num{5816} &13.9 &14.2&14.2 &13.2 \\
+Upper secondary & \num{7739} &18.6 &19.5 &19.3 &18.1 \\
+Technical or vocational qualification & \num{3117} &7.5 &7.8&7.6 &7.5 \\
+Advanced certificate/Completed apprenticeship & \num{2751} &6.6 &6.7&6.2 &5.6 \\
+Higher certificate & \num{2522} &6.0 &5.9&5.6 &5.5 \\
+Ordinary bachelor degree or national diploma & \num{3509} &8.4 &8.2&7.7 &8.1 \\
+Honours bachelor degree, professional qualification or both & \num{5886} &14.1 &12.4&12.3 &13.3 \\
+Postgraduate diploma or degree & \num{4329} &10.4 &9.2&9.2 &11.2 \\
+Doctorate(Ph.D) or higher & \num{375} &0.9 &0.8&1.0 &1.1 \\
+Not stated & \num{2122} &5.1 &5.6 &7.1 &6.5 \\
+Total & \num{41706} &100.0 &100.0 &100.0 &100.0 \\
+   \hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T10T4ED}{https://data.cso.ie/table/SAP2022T10T4ED}} &
+\end{tabular}
+
+\caption{Population aged 15+ by Highest Level of Education Completed for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+\pagebreak
+\begin{itemize}
+\item This CHN ranks  53 out of 96 regarding the percentage of the population aged 15+ with a highest level of education of Primary or lower, while it ranks  3 out of 4 CHNs in its IHA.
+\item This CHN ranks  29 out of 96 regarding the percentage of the population aged 15+ with a highest level of education of Ordinary bachelor degree or national diploma or higher, while it ranks   1 out of 4 CHNs in its IHA.
+\end{itemize}
+\pagebreak
+    
+\section{Families}\label{sect:Fam}
+\begin{itemize}
+\item This CHN ranks  60 out of 96 regarding the percentage of \textbf{family units} with a lone parent (see Detailed Tables section), while it ranks   4 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 150mm]{../figures/FamED.pdf}
+	\caption{Percentage of Families with Children by Family Type for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+	
+	
+\begin{table}[h]	
+\centering
+\begin{tabular}{lTTTTT}
+  \hline
+  \textbf{Type of Family} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Families}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}}& \emph{\textbf{\%}}  \\
+  \hline
+Couples with Children & \num{8703} &79.4 &77.8 &75.5 &75.2 \\
+Mothers with Children & \num{1854} &16.9 &18.3 &20.3 &21.1 \\
+Fathers with Children & \num{405} &3.7 &3.9 &4.1 &3.8 \\
+All Families & \num{10962} & 100.0 & 100.0  & 100.0 & 100.0 \\
+  \hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T4T3ED}{https://data.cso.ie/table/SAP2022T4T3ED}}  &
+\end{tabular}
+
+\caption{Families with Children by Family Type for South Limerick; 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+\pagebreak
+
+\section{Birthplace}\label{sect:Birth}
+\begin{itemize}
+\item This CHN ranks  65 out of 96 regarding the percentage of the population that were born outside Ireland, while it ranks  3 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 130mm]{../figures/BirthED.pdf}
+	\caption{Percentage of Usually Resident Population by Birthplace for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+	
+	
+\begin{table}[h]	
+\centering
+	\begin{tabular}{lTTTTT}
+  \hline
+  \textbf{Birthplace} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}}& \emph{\textbf{\%}} \\
+  \hline
+Ireland & \num{52991} &85.1 &84.0 &83.6 &80.0 \\
+United Kingdom & \num{2768} &4.4 &5.7 &5.1 &5.7 \\
+Poland & \num{1271} &2.0 &2.1 &2.3 &2.1 \\
+India & \num{888} &1.4 &0.8 &0.9 &1.1 \\
+Other EU272020 (Exec Ireland and Poland) & \num{1222} &2.0&2.4 &2.6 &4.4 \\
+Rest of World & \num{3104} &5.0 &5.1 &5.5 &6.7 \\
+Not stated & \num{0} &0.0 &0.0 &0.0 &0.0 \\
+Total & \num{62244} &100.0 &100.0 &100.0 &100.0 \\
+  \hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T2T1ED}{https://data.cso.ie/table/SAP2022T2T1ED}} &
+\end{tabular}
+
+\caption{Usually Resident Population By Birthplace for South Limerick, Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+\pagebreak
+
+\section{Households - Type of Occupancy}\label{sect:Households}
+\begin{itemize}
+\item This CHN ranks  56 out of 96 regarding the percentage households that are rented from a Local Authority, while it ranks  4 out of the CHNs in its IHA. 
+\item This CHNranks  21 out of 96 regarding the percentage of households that are owned outright, while it ranks   3 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 140mm]{../figures/HouseholdsED.pdf}
+	\caption{Percentage of Households by Type of Occupancy for South Limerick, IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+
+\begin{table}[h]	
+\centering
+		\begin{tabular}{lTTTTT}
+  \hline
+  \textbf{Type of Occupancy} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Households}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} \\
+  \hline
+Owned with mortgage or loan & \num{6814} & 30.7 & 28.1& 26.8 & 28.9 \\
+Owned outright & \num{9532} & 43.0 & 44.5 & 41.2 & 37.0 \\
+Rented from private landlord & \num{3063} & 13.8 & 13.5& 15.6 & 18.0 \\
+Rented from Local Authority & \num{939} & 4.2 & 5.8 & 7.3 & 8.3 \\
+Rented from voluntary/co-operative housing body & \num{292} & 1.3 & 1.4 & 1.5 & 1.6 \\
+Occupied free of rent & \num{488} & 2.2 & 2.2 & 1.9 & 1.7 \\
+Not stated & \num{1055} & 4.8 & 4.5& 5.6 & 4.4 \\
+Total & \num{22183} & 100.0 & 100.0& 100.0 & 100.0 \\
+\hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T6T3ED}{https://data.cso.ie/table/SAP2022T6T3ED}} &
+\end{tabular}
+
+\caption{Percentage of Households by Type of Occupancy for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+
+\pagebreak
+
+\section{Transport}\label{sect:Trans}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 120mm]{../figures/TravelED.pdf}
+	\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+
+\begin{table}[h]	
+\centering
+		\begin{tabular}{lTTTTTT}
+  \hline
+  \textbf{Means of travel} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Persons}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} \\
+ On Foot & \num{3468} & 7.7 & 8.4& 11.0 & 12.6 \\
+Bicycle & \num{438} & 1.0 & 0.9 & 1.2 & 2.7 \\
+Bus, minibus or coach & \num{3315} & 7.4 & 6.2 & 6.1 & 9.0 \\
+Train, DART or LUAS & \num{92} & 0.2 & 0.3& 0.3 & 2.4 \\
+Motorcycle or scooter & \num{81} & 0.2 & 0.1 & 0.2 & 0.3 \\
+Car Driver & \num{18806} & 42.0 &  41.5 & 38.9 & 34.7 \\
+Car passenger & \num{10314} & 23.0 & 23.4 & 22.3 & 19.1 \\
+Van & \num{2035} & 4.5 & 5.2& 4.4 & 4.1 \\
+Other (incl. lorry) & \num{205} & 0.5 & 0.5& 0.5 & 0.4 \\
+Work mainly at or from home & \num{3193} & 7.1 & 6.8 & 6.7 & 7.4 \\
+Not stated & \num{2817} & 6.3 & 6.7 & 8.4 & 7.4 \\
+Total & \num{44764} & 100.0 & 100.0& 100.0 & 100.0 \\
+  \hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T11T1ED}{https://data.cso.ie/table/SAP2022T11T1ED}} &
+\end{tabular}
+
+\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+
+\pagebreak
+\begin{itemize}
+\item This CHN ranks  66 out of 96 regarding the percentage of the population who travel to work, school, college or childcare on foot or bicycle, while it ranks   3 out of 4 CHNs in its IHA.
+\item This CHN ranks  3 out of 96 regarding the percentage of the population who travel to work, school, college or childcare as a car driver, while it ranks   2 out of 4 CHNs in its IHA.
+\end{itemize}
+\pagebreak
+\section{Renewable Energy}\label{sect:RE}
+\begin{itemize}
+\item This CHN ranks  69 out of 96 regarding the percentage of households with no renewable energy source, while it ranks   3 out of 4 CHNs in its IHA.
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 140mm]{../figures/RenewableEnergyED.pdf}
+	\caption{Percentage of Households by Renewable Energy Source for South Limerick; IHA, Health Region and State; Census 2022.}
+	\label{fig:vbnv}
+	\end{figure}
+
+\begin{table}[h]	
+\centering
+		\begin{tabular}{lTTTTT}
+  \hline
+  \textbf{Renewable Energy Source} & \multicolumn{2}{c}{\textbf{South Limerick}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+ \cline{2-3} \\
+ & \emph{\textbf{Households}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}}& \emph{\textbf{\%}} \\
+ All households & \num{22183} & 100.0 & 100.0 & 100.0 & 100.0 \\
+  No renewable energy sources & \num{13074} & 58.9 & 58.8& 60.0 & 66.1 \\
+   Renewable energy source not stated & \num{2297} & 10.4 & 10.1& 12.3 & 11.0 \\
+    Has at least one renewable energy source of any type & \num{6812} & 30.7 & 31.1& 27.7 & 22.9 \\
+  \hline
+       \multicolumn{5}{l}{\href{https://data.cso.ie/table/SAP2022T6T10ED}{https://data.cso.ie/table/SAP2022T6T10ED}} &
+\end{tabular}
+
+\caption{Percentage of Households by Renewable Energy Source for South Limerick; Census 2022. Percentage breakdowns for IHA, Health Region and State are also provided for comparison purposes.}
+\end{table} 
+
+\pagebreak
+
+\section{Detailed Tables}\label{sect:ST}
+\begin{table}[h]	
+\centering
+		\begin{tabular}{KTTTT}
+  \hline
+& \textbf{CHN} & \textbf{IHA} & \textbf{HR} & \textbf{State}\\  
+\hline
+    \multicolumn{5}{l}{\textbf{Education (Percentage of those aged 15+)}}\\
+    \arrayrulecolor{black}\hline
+No formal education & 1.7& 2.1& 2.2& 2.4\\
+Primary education & 6.8& 7.6& 7.7& 7.4\\
+Lower secondary & 13.9& 14.2& 14.2& 13.2\\
+Upper secondary & 18.6& 19.5& 19.3& 18.1\\
+Technical or vocational qualification  & 7.5& 7.8& 7.6& 7.5\\
+Advanced certificate/Completed apprenticeship & 6.6& 6.7& 6.2& 5.6\\
+Higher certificate & 6.0& 5.9& 5.6& 5.5\\
+Ordinary bachelor degree or national diploma & 8.4& 8.2& 7.7& 8.1\\
+Hns bach. degree, prof. qual. or both & 14.1& 12.4& 12.3& 13.3\\
+Postgraduate diploma or degree & 10.4&  9.2&  9.2& 11.2\\
+Doctorate(Ph.D) or higher & 0.9& 0.8& 1.0& 1.1\\
+  \arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Employment (Percentage of those aged 15+)}}\\ 
+    \arrayrulecolor{black}\hline
+At work & 56.8& 55.3& 54.0& 56.1\\
+Looking for first regular job & 0.5& 0.7& 0.8& 0.8\\
+short Term Unemployed  & 1.2& 1.5& 1.6& 1.7\\
+Long Term Unemployed  & 1.8& 2.2& 2.5& 2.6\\
+Student  & 10.9& 10.5& 11.7& 11.1\\
+Looking after home/family   & 6.4& 6.6& 6.5& 6.6\\
+Retired  & 17.3& 17.9& 17.2& 15.9\\
+Unable to work - perm. sickness or disability & 4.7& 4.7& 5.2& 4.6\\
+\hline
+    \multicolumn{5}{l}{\textbf{Employment (Percentage of those at work)}}\\
+    \hline
+Agriculture, forestry and fishing  & 6.4& 6.3& 5.3& 3.5\\
+Building and construction & 5.6& 6.0& 5.4& 5.8\\
+Manufacturing industries & 15.4& 16.7& 15.4& 11.8\\
+Commerce and trade  & 19.8& 18.7& 19.7& 23.8\\
+Transport and communications  & 6.9& 7.1& 7.3& 9.2\\
+Public administration & 4.9& 5.5& 5.5& 5.7\\
+Professional services & 28.0& 25.0& 25.2& 24.5\\
+%Other & & 16.2& 15.8\\
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Social Class (Percentage of population)}}\\ 
+    \arrayrulecolor{black}\hline
+Professional workers  & 11.1&  9.0 &  8.8&  9.3\\
+Managerial and technical & 32.5& 31.0& 29.1& 30.7\\
+Non-manual & 16.1& 15.9& 15.8& 16.2\\
+Skilled manual & 12.9& 13.8& 13.1& 12.9\\
+Semi-skilled & 10.4& 11.6& 11.3& 11.2\\
+Unskilled  & 2.9& 3.2& 3.2& 3.1\\
+\end{tabular}
+\end{table}
+\pagebreak
+\begin{table}[h]	
+\centering
+		\begin{tabular}{KTTTT}
+  \arrayrulecolor{black}\hline
+& \textbf{CHN} & \textbf{IHA} & \textbf{HR}& \textbf{State}\\ 
+\hline
+   \multicolumn{5}{l}{\textbf{Families (Percentage of family units)}}\\ 
+   \arrayrulecolor{black}\hline
+Families without children & 31.2& 31.6&31.3& 30.8\\
+Families with 1 child & 25.8& 26.3&27.1& 27.1\\
+Families with 2 children & 25.4& 24.8&24.5& 25.3\\
+Families with 3 children & 12.9& 12.6&12.4& 12.3\\
+Families with 4 children & 3.7& 3.7& 3.6& 3.5\\
+Families with 5 or more children & 1.0& 1.1&1.1& 1.0\\
+    \arrayrulecolor{lightgray}\hline
+Couples with children & 54.6& 53.2&51.9& 52.0\\
+Lone parent (mother) & 11.6& 12.5& 14.0& 14.6\\
+Lone parent (father) & 2.5& 2.7& 2.8& 2.6\\
+    \arrayrulecolor{lightgray}\hline
+Pre-family families & 7.8& 7.2&7.7& 9.3\\
+Empty nest families & 10.0& 10.7& 10.3&  9.4\\
+Retired families & 13.4& 13.7&13.3& 12.0\\
+Per-school families & 7.3& 7.4& 7.6& 8.1\\
+Early school families & 9.6& 9.4&9.4& 9.9\\
+Pre-adolescent families & 12.1& 11.6&11.6& 11.9\\
+Adolescent families & 12.3& 12.9&12.6& 12.3\\
+Adult families & 54.6& 27.1& 27.6& 27.0\\
+    \arrayrulecolor{lightgray}\hline
+Families with youngest child aged 0 - 4 & 23.0& 23.1&23.2& 14.6\\
+Families with youngest child aged 5 - 9 & 17.8& 17.1&17.4& 18.1\\
+Families with youngest child aged 10 - 14 & 16.5& 17.0&16.8& 16.9\\
+Families with youngest child aged 15 - 19 & 14.4& 14.6&14.0& 13.6\\
+Families with youngest child aged 20 and over & 28.3& 28.3&28.6& 27.5\\
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Health (Percentage of population)}}\\ 
+    \arrayrulecolor{black}\hline
+Very good general health & 53.9& 52.2&50.8& 53.2\\
+Good general health & 30.2& 31.1& 30.5& 29.7\\
+Fair general health & 8.5& 9.0&9.2& 8.6\\
+Bad general health & 1.3& 1.4&1.5& 1.4\\
+Very bad general health & 0.3& 0.3&0.4& 0.3\\
+    \arrayrulecolor{lightgray}\hline
+Persons who smoke & 11.4& 12.4&13.1& 13.1\\
+    \arrayrulecolor{lightgray}\hline
+With a disability (to some or to a great extent) & 20.9& 21.3&22.2& 21.5\\
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Household composition (Percentage of Private Households)}}\\ 
+    \arrayrulecolor{black}\hline
+Married couple households & 16.6& 16.7& 15.6& 14.9\\
+Cohabiting couple households & 3.8& 3.8& 3.8& 4.3\\
+Married couple with children households & 33.0& 31.1& 29.0& 29.4\\
+Cohabiting couple with children households & 3.7& 4.1& 4.2& 4.3\\
+One parent family (father) with  children households & 1.5& 1.5& 1.5& 1.5\\
+One parent family (mother) and children households & 7.1& 7.5& 8.0& 8.5\\
+Couple and others households  & 1.3& 1.1& 1.3& 1.5\\
+Two or more non-related persons households & 4.3& 3.3& 5.5& 5.4\\
+    \arrayrulecolor{lightgray}\hline
+1 person households & 22.3& 24.9& 24.7& 23.1\\
+2 person households & 27.8& 28.5& 29.1& 29.0\\
+3 person households & 18.3& 17.1& 17.5& 17.9\\
+4 person households & 17.6& 16.2& 15.8& 16.9\\
+5 person households & 9.7& 9.1& 8.7& 8.9\\
+6 person households & 3.2& 3.0& 2.9& 3.0\\
+7 person households & 0.9& 0.8& 0.8& 0.8\\
+8 or more person households & 0.4& 0.3& 0.4& 0.4\\
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Housing (Percentage of permanent dwellings)}}\\ 
+    \arrayrulecolor{black}\hline
+Occupied & 90.4& 83.8& 86.6& 87.4\\
+Temporarily absent & 1.2& 1.5& 1.5& 1.6\\
+Unoccupied holiday homes & 0.9& 5.6& 3.5& 3.2\\
+Other vacant dwellings & 7.5& 9.1& 8.4& 7.7\\
+\hline
+\end{tabular}
+\end{table}
+\pagebreak
+\begin{table}[h]	
+\centering
+		\begin{tabular}{KTTTT}
+ \arrayrulecolor{black} \hline
+& \textbf{CHN} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
+\hline
+    \multicolumn{5}{l}{\textbf{Housing (Percentage of permanent private households)}}\\ 
+    \arrayrulecolor{black}   \hline
+Owned with mortgage or loan & 30.7& 28.1& 26.8& 28.9\\
+Owned outright & 43.0& 44.5& 41.2& 37.0\\
+Rented from private landlord & 13.8& 13.5& 15.6& 18.0\\
+Rented from Local Authority & 4.2& 5.8& 7.3& 8.3\\
+Rented from voluntary/co-operative housing body & 1.3& 1.4& 1.5& 1.6\\
+Occupied free of rent & 2.2& 2.2& 1.9& 1.7\\
+    \arrayrulecolor{lightgray}\hline
+1 room & 0.2& 0.2& 0.3& 0.5\\
+2 rooms & 1.5& 2.0& 2.7& 3.9\\
+3 rooms & 5.7& 6.2& 6.8& 8.0\\
+4 rooms &  8.2&  9.4&  9.9& 11.0\\
+5 rooms & 21.6& 22.5& 22.6& 23.8\\
+6 rooms & 21.7& 21.6& 21.0& 19.9\\
+7 rooms & 17.9& 16.8& 15.7& 14.0\\
+8 or more rooms & 20.8& 18.9& 17.6& 15.8\\
+    \arrayrulecolor{lightgray}\hline
+No central heating & 1.3& 1.4& 1.3& 1.2\\
+    \arrayrulecolor{lightgray}\hline
+Public main water supply & 65.3& 64.9& 71.6& 80.1\\
+Group scheme with public source water supply & 8.4& 9.6& 7.2& 4.3\\
+Group scheme with private source water supply & 9.5& 8.9& 6.4& 3.4\\
+Other private source water supply & 15.2& 14.8& 12.3&  9.9\\
+No water supply & 0.1& 0.2& 0.1& 0.1\\
+\arrayrulecolor{black}\hline
+    \multicolumn{4}{l}{\textbf{Housing (Percentage of private households)}}\\ 
+    \arrayrulecolor{black}\hline
+House/Bungalow & 95.0& 94.8& 91.3& 86.7\\
+Flat/Apartment &  4.6&  4.9&  8.4& 13.0\\
+Bed-Sit & 0.1& 0.0& 0.1& 0.1\\
+Caravan/Mobile home & 0.3& 0.3& 0.2& 0.2\\
+    \arrayrulecolor{lightgray}\hline
+Built Pre 1919 & 10.1&  9.4&  8.8&  8.4\\
+Built 1919 - 1945 & 6.2& 6.0& 6.5& 6.2\\
+Built  1946 - 1960 & 5.1& 5.7& 6.9& 7.2\\
+Built  1961 - 1970 & 5.1& 6.4& 7.2& 6.7\\
+Built  1971 - 1980 & 12.7& 12.7& 12.3& 12.2\\
+Built  1981 - 1990 & 12.4& 11.4& 10.6& 10.1\\
+Built  1991 - 2000 & 17.3& 15.6& 15.2& 14.5\\
+Built  2001 - 2010 & 23.1& 24.6& 24.2& 24.5\\
+Built  2011 - 2015 & 2.2& 2.6& 2.5& 2.7\\
+Built  2016 or later & 3.7& 3.5& 3.3& 5.1\\
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Marital Status (Percentage of population)}}\\
+    \arrayrulecolor{black}\hline
+Single & 51.3& 51.0& 52.9& 53.9\\
+Married (incl. same sex civil partnership) & 40.2& 39.6& 37.8& 37.1\\
+Separated  & 2.2& 2.3& 2.4& 2.3\\
+Divorced  & 2.1& 2.5& 2.5& 2.6\\
+Widowed & 4.3& 4.6& 4.5& 4.1\\
+\arrayrulecolor{black}\hline
+    \multicolumn{4}{l}{\textbf{Migration and ethnicity (Percentage of population)}}\\ 
+   \arrayrulecolor{black} \hline
+Speak english not well & 1.2& 1.3& 1.4& 1.6\\
+Speak english not at all & 0.2& 0.2& 0.2& 0.3\\
+\arrayrulecolor{black}\hline
+    \multicolumn{4}{l}{\textbf{Occupation (Percentage of those at work or unemployed)}}\\
+   \arrayrulecolor{black} \hline
+Managers, directors and senior officials & 7.3& 7.1& 6.8& 7.7\\
+Professional occupations & 22.7& 19.4& 18.9& 20.3\\
+Associate professional and technical occupations & 10.7& 10.3& 10.3& 11.7\\
+Administrative and secretarial occupations & 9.1& 9.0& 8.8& 9.2\\
+Skilled trades occupations & 15.4& 16.6& 14.8& 12.6\\
+Caring, leisure and other service occupations & 7.6& 7.9& 7.7& 7.4\\
+Sales and customer service occupations & 5.3& 5.3& 5.9& 6.2\\
+Process, plant and machine operatives & 6.8& 8.0& 7.5& 6.9\\
+Elementary occupations & 6.9& 7.5& 7.8& 8.2\\
+\arrayrulecolor{black}\hline
+\end{tabular}
+\end{table}
+\pagebreak
+\begin{table}[h]	
+\centering
+		\begin{tabular}{KTTTT}
+ \arrayrulecolor{black} \hline
+& \textbf{CHN} & \textbf{IHA} & \textbf{HR}& \textbf{State}\\ 
+ \arrayrulecolor{black} \hline
+    \multicolumn{5}{l}{\textbf{Migration and ethnicity (Percentage of usually resident population)}}\\ 
+    \arrayrulecolor{black}\hline
+Ireland - Birthplace & 85.1& 84.0& 83.6& 80.0\\
+UK - Birthplace & 4.4& 5.7& 5.1& 5.7\\
+Poland - Birthplace & 2.0& 2.1& 2.3& 2.1\\
+India - Birthplace & 1.4& 0.8& 0.9& 1.1\\
+Other EU28 - Birthplace & 2.0& 2.4& 2.6& 4.4\\
+Rest of world - Birthplace & 5.0& 5.1& 5.5& 6.7\\
+    \arrayrulecolor{lightgray}\hline
+White Irish & 81.8& 81.5& 79.5& 76.6\\
+White Irish Traveller & 0.3& 1.0& 0.9& 0.6\\
+Other White & 6.4& 7.6& 7.5& 9.9\\
+Black or Black Irish & 1.1& 1.0& 1.0& 1.5\\
+Asian or Asian Irish & 3.8& 2.3& 2.5& 3.3\\
+Other ethnic or cultural background & 1.3& 1.4& 1.5& 2.0\\
+    \arrayrulecolor{lightgray}\hline
+Usual residence 1 year before census day - Outside Ireland & 1.5& 1.3& 1.4& 1.8\\
+
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Socio-economic group of ref. person (percentage of private households)}}\\ 
+    \arrayrulecolor{black}\hline
+A Employers and managers & 11.6& 10.8& 10.5& 12.9\\
+B Higher professional & 1.5& 1.3& 1.3& 1.5\\
+C Lower professional & 7.5& 5.7& 5.7& 6.3\\
+D Non-manual & 32.8& 31.8& 31.8& 34.2\\
+E Manual skilled & 9.1& 9.4& 9.0& 8.5\\
+F Semi-skilled & 7.6& 8.6& 8.2& 7.7\\
+G Unskilled & 3.3& 3.6& 3.5& 3.2\\
+H Own account workers & 4.0& 4.4& 4.0& 4.0\\
+I Farmers & 6.1& 6.2& 4.9& 3.1\\
+J Agricultural workers & 1.7& 1.7& 1.3& 1.2\\
+Z All others gainfully occupied and unknown & 15.1& 16.5& 19.8& 17.5\\
+\hline
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Transport (Percentage of population agCHN 5+)}}\\ 
+   \arrayrulecolor{black} \hline
+No motor car (percentage of households) &  6.9&  8.5& 11.2& 
+13.4\\
+    \arrayrulecolor{lightgray}\hline 
+\emph{Travel to work, school, College or childcare:} & & & \\
+\quad On Foot &  7.7&  8.4& 11.0& 12.6\\ 
+\quad By Bicycle & 1.0& 0.9& 1.2& 2.7\\ 
+\quad By Bus, minibus or coach & 7.4& 6.2& 6.1& 9.0\\
+\quad By Train, DART or LUAS & 0.2& 0.3& 0.3& 2.4\\
+\quad By Motorcycle or scooter & 0.2& 0.1& 0.2& 0.3\\
+\quad Car driver & 42.0 & 41.5& 38.9& 34.7\\
+\quad Car passenger & 23.0& 23.4& 22.3& 19.1\\
+\quad By Van & 4.5& 5.2& 4.4& 4.1\\
+\quad By Other (incl. lorry) & 0.5& 0.5& 0.5& 0.4\\
+    \arrayrulecolor{lightgray}\hline
+Work mainly at or from home & 7.1& 6.8& 6.7& 7.4\\
+Journey time to work, school or college is Under 15 mins & 30.4& 33.9& 32.7& 29.4\\
+Journey time to work, school or college is 1/4 hour - under 1/2 hour & 31.6& 27.2& 28.6& 28.1\\
+Journey time to work, school or college is 1/2 hour - under 3/4 hour & 18.7& 16.9& 16.2& 17.3\\
+Journey time to work, school or college is 3/4 hour - under 1 hour & 4.5& 5.6& 4.7& 5.9\\
+Journey time to work, school or college is 1 hour - under 1 1/2 hours & 3.8& 4.7& 4.0& 6.1\\
+Journey time to work, school or college is 1 1/2 hours and over & 1.7& 1.9& 2.0& 2.5\\
+\arrayrulecolor{black}\hline
+    \multicolumn{5}{l}{\textbf{Other}}\\ 
+    \arrayrulecolor{black}\hline
+Has renewable energy source (percentage of permanent private households) & 30.7& 31.1& 27.7& 22.9\\
+    \arrayrulecolor{lightgray}\hline
+Volunteers (percentage of population) & 15.3& 15.8& 14.8& 13.8\\
+    \arrayrulecolor{lightgray}\hline
+No internet connection& 10.8& 12.0& 11.0&  8.7\\
+\arrayrulecolor{black}\hline
+\end{tabular}
+\end{table}
+
+
+\end{document}
