@@ -333,7 +333,7 @@ Both Sexes & \num{\Sexpr{CarersED$TotalPop[CarersED$Sex == "Both Sexes"]}} & \nu
 	
 \begin{table}[!h]	
 \centering
-	\begin{tabular}{lTTTTTT}
+	\begin{tabular}{ATTTTTT}
   \hline
   \textbf{Smoking Status} & \multicolumn{2}{c}{\textbf{\Sexpr{EDForTables}}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
  \cline{2-3} \\
@@ -437,7 +437,7 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"&PESED
 	\end{figure}
 \begin{table}[h]	
 \centering
-	\begin{tabular}{lTTTTT}
+	\begin{tabular}{ATTTTT}
   \hline
   \textbf{Highest Level of Education Completed} & \multicolumn{2}{c}{\textbf{\Sexpr{EDForTables}}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
  \cline{2-3} \\
@@ -553,7 +553,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \centering
 		\begin{tabular}{lTTTTT}
   \hline
-  \textbf{Type of Occupancy} & \multicolumn{2}{c}{\textbf{\Sexpr{EDForTables}}} & \textbf{HR} & \textbf{State}\\ 
+  \textbf{Type of Occupancy} & \multicolumn{2}{c}{\textbf{\Sexpr{EDForTables}}} & \textbf{IHA}& \textbf{HR} & \textbf{State}\\ 
  \cline{2-3} \\
  & \emph{\textbf{Households}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} & \emph{\textbf{\%}} \\
   \hline
@@ -742,9 +742,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \Sexpr{Health..percentage.of.population.$Label[5]} & \Sexpr{Health..percentage.of.population.$CHN[5]}& \Sexpr{Health..percentage.of.population.$IHA[5]}&\Sexpr{Health..percentage.of.population.$HR[5]}& \Sexpr{Health..percentage.of.population.$State[5]}\\
     \arrayrulecolor{lightgray}\hline
 \Sexpr{Health..percentage.of.population.$Label[6]} & \Sexpr{Health..percentage.of.population.$CHN[6]}& \Sexpr{Health..percentage.of.population.$IHA[6]}&\Sexpr{Health..percentage.of.population.$HR[6]}& \Sexpr{Health..percentage.of.population.$State[6]}\\
-    \arrayrulecolor{lightgray}\hline
-\Sexpr{Health..percentage.of.population.$Label[7]} & \Sexpr{Health..percentage.of.population.$CHN[7]}& \Sexpr{Health..percentage.of.population.$IHA[7]}&\Sexpr{Health..percentage.of.population.$HR[7]}& \Sexpr{Health..percentage.of.population.$State[7]}\\
-\arrayrulecolor{black}\hline
+    \arrayrulecolor{black}\hline
     \multicolumn{5}{l}{\textbf{Household composition (Percentage of Private Households)}}\\ 
     \arrayrulecolor{black}\hline
 \Sexpr{Household.Composition..percentage.of.private.households.$Label[1]} & \Sexpr{Household.Composition..percentage.of.private.households.$CHN[1]}& \Sexpr{Household.Composition..percentage.of.private.households.$IHA[1]}& \Sexpr{Household.Composition..percentage.of.private.households.$HR[1]}& \Sexpr{Household.Composition..percentage.of.private.households.$State[1]}\\

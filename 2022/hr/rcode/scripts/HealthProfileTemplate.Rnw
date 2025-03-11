@@ -197,7 +197,7 @@ knitr::kable(CHNsInHealthRegion,col.names = NULL)
   \hline
 Males & \num{\Sexpr{TotalPopEDMales}} & \num{\Sexpr{EDDisWiderMale$value}}  & \Sexpr{EDDisWiderMale$PercentageWithADisability}  & \Sexpr{ACDisWiderMale$PercentageWithADisability} \\
 Females & \num{\Sexpr{TotalPopEDFemales}} & \num{\Sexpr{EDDisWiderFemale$value}}  & \Sexpr{EDDisWiderFemale$PercentageWithADisability}  & \Sexpr{ACDisWiderFemale$PercentageWithADisability}\\
-Both Sexes & \num{\Sexpr{TotalPopEDBothSexes}} & \num{\Sexpr{EDDisWiderAllSexes$value}}  & \Sexpr{EDDisWiderAllSexes$PercentageWithADisability}  & \Sexpr{ACDisWiderFemale$PercentageWithADisability} \\
+Both Sexes & \num{\Sexpr{TotalPopEDBothSexes}} & \num{\Sexpr{EDDisWiderAllSexes$value}}  & \Sexpr{EDDisWiderAllSexes$PercentageWithADisability}  & \Sexpr{ACDisWiderAllSexes$PercentageWithADisability} \\
      \hline
        \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T1SA}{https://data.cso.ie/table/SAP2022T12T1SA}} 
 \end{tabular}

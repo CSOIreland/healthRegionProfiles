@@ -103,7 +103,7 @@ for (i in 1:nrow(EDWGUIDAC)) {
     IHALC <- as.character(EDWGUIDAC$IHALC[i])
     
     #Create a truncated version of ED so that tables and plots remain consistent
-    EDForTables <- str_trunc(ED, 25)
+    EDForTables <- str_trunc(ED, 18)
     EDForTables <- str_replace_all(EDForTables, "[^[:alnum:]]\\,", " ")
     EDName <- make.names(ED)
     EDName <- gsub("\\.","-", EDName)
