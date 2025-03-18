@@ -84,7 +84,7 @@ Transport..percentage.of.population.aged.5.years.and.over.$Label <- gsub("Travel
 
 SAPSPercentagesRegion <- SAPSPercentages%>%filter(RegionType == "HR")
 SAPSPercentagesIHA <- SAPSPercentages%>%filter(RegionType == "IHA")
-CHNsInIHA2 <- SAPSHRLookup$IHA[SAPSHRLookup$Region == ED]
+CHNsInIHA2 <- SAPSHRLookup$IHA[SAPSHRLookup$Region == AC]
 SAPSPercentagesIHAHR <- SAPSPercentages%>%filter(RegionType == "IHA" & ED %in% CHNsInIHA2)
 
 SAPSTotalRegionRanked <- SAPSPercentagesRegion%>%filter(ED!="State" & ED!="ignore"& ED!="ignore2"& ED!="Ignore"& ED!="Ignore2"& ED!="ignore3"& ED!="Ignore3")%>%mutate(PrimaryOrLower =T10_4_NFT +T10_4_PT,

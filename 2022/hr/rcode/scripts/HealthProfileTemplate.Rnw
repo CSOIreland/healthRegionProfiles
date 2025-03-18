@@ -32,7 +32,7 @@
 %\titlepic{\includegraphics{../figures/CSO_Logo.png}}
 \title{Health Region Profile - \Sexpr{ED}}
 %\date{\vspace{-5ex}}
-\date{Census 2022}
+\date{Census 2022 (WIP Profile Created on \Sexpr{TodaysDate}. Please report any inconsistencies to tomas.kelly@cso.ie)}
 \author{CSO, Ireland  (\url{http://www.cso.ie)}}
 
 \newcolumntype{T}{>{\raggedleft\arraybackslash}m{1.7cm}}
@@ -114,7 +114,7 @@ knitr::kable(CHNsInHealthRegion,col.names = NULL)
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 100mm]{../figures/PyramidPlot.pdf}
-	\caption{Persons by Age Group and Gender for \Sexpr{EDForTables}; Census 2022.}
+	\caption{Persons by Age Group and Gender for \Sexpr{ED}; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 
@@ -170,7 +170,7 @@ knitr::kable(CHNsInHealthRegion,col.names = NULL)
       \hline 
     \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T1T1ASA}{https://data.cso.ie/table/SAP2022T1T1ASA}} & & 
 \end{tabular}
-\caption{Population Breakdown by Age and Sex for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are provided for comparison purposes.}
+\caption{Population Breakdown by Age and Sex for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are provided for comparison purposes.}
 \end{table}
 
 \pagebreak
@@ -179,7 +179,7 @@ knitr::kable(CHNsInHealthRegion,col.names = NULL)
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 130mm]{../figures/DisED.pdf}
-	\caption{Percentage of Population with any Disability by Age Group for \Sexpr{EDForTables}, as well as State, Census 2022.}
+	\caption{Percentage of Population with any Disability by Age Group for \Sexpr{ED}, as well as State, Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 
@@ -202,7 +202,7 @@ Both Sexes & \num{\Sexpr{TotalPopEDBothSexes}} & \num{\Sexpr{EDDisWiderAllSexes$
        \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T1SA}{https://data.cso.ie/table/SAP2022T12T1SA}} 
 \end{tabular}
 
-\caption{Persons with a Disability by Sex for \Sexpr{EDForTables}; Census 2022. Percentage Breakdowns for the State are also provided for comparison purposes.}
+\caption{Persons with a Disability by Sex for \Sexpr{ED}; Census 2022. Percentage Breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak
@@ -212,7 +212,7 @@ Both Sexes & \num{\Sexpr{TotalPopEDBothSexes}} & \num{\Sexpr{EDDisWiderAllSexes$
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 150mm]{../figures/GenED.pdf}
-	\caption{Population Breakdown (\%) by General Health for \Sexpr{EDForTables}, as well as State,  Census 2022.}
+	\caption{Population Breakdown (\%) by General Health for \Sexpr{ED}, as well as State,  Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 
@@ -234,7 +234,7 @@ Total& \num{\Sexpr{GenLongEDBothSexes$value[GenLongEDBothSexes$General.Health ==
    \hline
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T12T3SA}{https://data.cso.ie/table/SAP2022T12T3SA}} & 
 \end{tabular}
-\caption{Population by General Health for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Population by General Health for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table}
 \pagebreak
 
@@ -242,7 +242,7 @@ Total& \num{\Sexpr{GenLongEDBothSexes$value[GenLongEDBothSexes$General.Health ==
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 150mm]{../figures/CareED.pdf}
-	\caption{Carers as a Percentage of the Population of Males/Females/Both Sexes for \Sexpr{EDForTables}, as well as the State; Census 2022.}
+	\caption{Carers as a Percentage of the Population of Males/Females/Both Sexes for \Sexpr{ED}, as well as the State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 	
@@ -264,7 +264,7 @@ Both Sexes & \num{\Sexpr{CarersED$TotalPop[CarersED$Sex == "Both Sexes"]}} & \nu
        \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T2SA}{https://data.cso.ie/table/SAP2022T12T2SA}} 
 \end{tabular}
 
-\caption{Carers by Sex for \Sexpr{EDForTables}; Census 2022. Percentage Breakdowns for the State are also provided for comparison purposes.}
+\caption{Carers by Sex for \Sexpr{ED}; Census 2022. Percentage Breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak
@@ -273,7 +273,7 @@ Both Sexes & \num{\Sexpr{CarersED$TotalPop[CarersED$Sex == "Both Sexes"]}} & \nu
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 150mm]{../figures/VolunteerED.pdf}
-	\caption{Volunteers as a Percentage of the Population for \Sexpr{EDForTables}; as well as the State; Census 2022.}
+	\caption{Volunteers as a Percentage of the Population for \Sexpr{ED}; as well as the State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 	
@@ -294,7 +294,7 @@ Both Sexes & \num{\Sexpr{CarersED$TotalPop[CarersED$Sex == "Both Sexes"]}} & \nu
        \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T7T1SA}} 
 \end{tabular}
 
-\caption{Volunteers for \Sexpr{EDForTables}; Census 2022. Percentage Breakdowns for the State are also provided for comparison purposes.}
+\caption{Volunteers for \Sexpr{ED}; Census 2022. Percentage Breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak
@@ -303,7 +303,7 @@ Both Sexes & \num{\Sexpr{CarersED$TotalPop[CarersED$Sex == "Both Sexes"]}} & \nu
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 120mm]{../figures/SmokingED.pdf}
-	\caption{Percentage of the Population who Smoke Tobacco Products (Daily and Occasionally) for \Sexpr{EDForTables}; as well as the State; Census 2022.}
+	\caption{Percentage of the Population who Smoke Tobacco Products (Daily and Occasionally) for \Sexpr{ED}; as well as the State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 	
@@ -324,7 +324,7 @@ All Persons & \num{\Sexpr{SmokingED$`All persons`}} & 100.0 & 100.0  \\
       \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T4SA}{https://data.cso.ie/table/SAP2022T12T4SA}} 
 \end{tabular}
 
-\caption{Smoking Status of \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Smoking Status of \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
     
   
@@ -333,7 +333,7 @@ All Persons & \num{\Sexpr{SmokingED$`All persons`}} & 100.0 & 100.0  \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/PESED.pdf}
-	\caption{Percentage of Population Aged 15+ by Principal Economic Status for \Sexpr{EDForTables}, as well as the State; Census 2022.}
+	\caption{Percentage of Population Aged 15+ by Principal Economic Status for \Sexpr{ED}, as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -359,7 +359,7 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"]}} &\
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T8T1SA}{https://data.cso.ie/table/SAP2022T8T1SA}} &
 \end{tabular}
 
-\caption{Population aged 15+ by Principal Economic Status for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Population aged 15+ by Principal Economic Status for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak
@@ -368,7 +368,7 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"]}} &\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/SocialClassED.pdf}
-	\caption{Percentage of Population Aged 15+ by Social Class for \Sexpr{EDForTables}, as well as the State; Census 2022.}
+	\caption{Percentage of Population Aged 15+ by Social Class for \Sexpr{ED}, as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -392,7 +392,7 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"]}} &\
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T9T1SA}{https://data.cso.ie/table/SAP2022T9T1SA}} &
 \end{tabular}
 
-\caption{Population aged 15+ by Social Class for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Population aged 15+ by Social Class for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak
@@ -400,7 +400,7 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"]}} &\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 120mm]{../figures/EduED.pdf}
-	\caption{Percentage of Population Aged 15+ by Highest Level of Education Completed for \Sexpr{EDForTables}; as well as the State; Census 2022.}
+	\caption{Percentage of Population Aged 15+ by Highest Level of Education Completed for \Sexpr{ED}; as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 \begin{table}[h]	
@@ -428,7 +428,7 @@ Total & \num{\Sexpr{EduEDTable$value[EduEDTable$Highest.Level.of.Education.Compl
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T10T4SA}{https://data.cso.ie/table/SAP2022T10T4SA}} &
 \end{tabular}
 
-\caption{Population aged 15+ by Highest Level of Education Completed for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Population aged 15+ by Highest Level of Education Completed for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 \pagebreak    
     
@@ -436,7 +436,7 @@ Total & \num{\Sexpr{EduEDTable$value[EduEDTable$Highest.Level.of.Education.Compl
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 150mm]{../figures/FamED.pdf}
-	\caption{Percentage of Families with Children by Family Type for \Sexpr{EDForTables}; as well as the State; Census 2022.}
+	\caption{Percentage of Families with Children by Family Type for \Sexpr{ED}; as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 	
@@ -457,7 +457,7 @@ All Families & \num{\Sexpr{TotalFamiliesED}} & 100.0 & 100.0  \\
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T4T3SA}{https://data.cso.ie/table/SAP2022T4T3SA}}  &
 \end{tabular}
 
-\caption{Families with Children by Family Type for \Sexpr{EDForTables}; 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Families with Children by Family Type for \Sexpr{ED}; 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 \pagebreak
 
@@ -465,7 +465,7 @@ All Families & \num{\Sexpr{TotalFamiliesED}} & 100.0 & 100.0  \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 130mm]{../figures/BirthED.pdf}
-	\caption{Percentage of Usually Resident Population by Birthplace for \Sexpr{EDForTables}; as well as the State; Census 2022.}
+	\caption{Percentage of Usually Resident Population by Birthplace for \Sexpr{ED}; as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 	
@@ -490,7 +490,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T2T1SA}{https://data.cso.ie/table/SAP2022T2T1SA}} &
 \end{tabular}
 
-\caption{Usually Resident Population By Birthplace for \Sexpr{EDForTables}, Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Usually Resident Population By Birthplace for \Sexpr{ED}, Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 \pagebreak
 
@@ -498,7 +498,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/HouseholdsED.pdf}
-	\caption{Percentage of Households by Type of Occupancy for \Sexpr{EDForTables}, as well as the State; Census 2022.}
+	\caption{Percentage of Households by Type of Occupancy for \Sexpr{ED}, as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -522,7 +522,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T6T3SA}{https://data.cso.ie/table/SAP2022T6T3SA}} &
 \end{tabular}
 
-\caption{Percentage of Households by Type of Occupancy for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Percentage of Households by Type of Occupancy for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak
@@ -531,7 +531,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 120mm]{../figures/TravelED.pdf}
-	\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{EDForTables},as well as the State; Census 2022.}
+	\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{ED},as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -558,7 +558,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T11T1SA}{https://data.cso.ie/table/SAP2022T11T1SA}} &
 \end{tabular}
 
-\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak
@@ -567,7 +567,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/RenewableEnergyED.pdf}
-	\caption{Percentage of Households by Renewable Energy Source for \Sexpr{EDForTables}, as well as the State; Census 2022.}
+	\caption{Percentage of Households by Renewable Energy Source for \Sexpr{ED}, as well as the State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -586,7 +586,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T6T10SA}{https://data.cso.ie/table/SAP2022T6T10SA}} &
 \end{tabular}
 
-\caption{Percentage of Households by Renewable Energy Source for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
+\caption{Percentage of Households by Renewable Energy Source for \Sexpr{ED}; Census 2022. Percentage breakdowns for the State are also provided for comparison purposes.}
 \end{table} 
 
 \pagebreak

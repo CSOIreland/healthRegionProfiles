@@ -32,7 +32,7 @@
 %\titlepic{\includegraphics{../figures/CSO_Logo.png}}
 \title{IHA Health Profile - \Sexpr{ED} (Health Region: \Sexpr{AC})}
 %\date{\vspace{-5ex}}
-\date{Census 2022}
+\date{Census 2022 (WIP Profile Created on \Sexpr{TodaysDate}. Please report any inconsistencies to tomas.kelly@cso.ie)}
 \author{CSO, Ireland  (\url{http://www.cso.ie)}}
 
 \newcolumntype{T}{>{\raggedleft\arraybackslash}m{1.7cm}}
@@ -121,7 +121,7 @@ knitr::kable(CHNsInIHA,col.names = NULL)
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 100mm]{../figures/PyramidPlot.pdf}
-	\caption{Persons by Age Group and Gender for \Sexpr{EDForTables}; Census 2022.}
+	\caption{Persons by Age Group and Gender for \Sexpr{ED}; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 
@@ -177,24 +177,24 @@ knitr::kable(CHNsInIHA,col.names = NULL)
       \hline 
     \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T1T1AED}{https://data.cso.ie/table/SAP2022T1T1AED}} & & &
 \end{tabular}
-\caption{Population Breakdown by Age and Sex for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region (HR) and State are provided for comparison purposes.}
+\caption{Population Breakdown by Age and Sex for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022. }
 \end{table}
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(ZeroTo14RankedIHAJoint == "Joint","joint","")} \Sexpr{ZeroTo14RankedIHA}  out of \Sexpr{NumIHAs} regarding the percentage of persons aged 0 - 14, while it ranks \Sexpr{ifelse(ZeroTo14RankedIHAHRJoint == "Joint","joint","")} \Sexpr{ZeroTo14RankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region
-\item This IHA ranks \Sexpr{ifelse(SixtyFivePRankedIHAJoint == "Joint","joint","")} \Sexpr{SixtyFivePRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of persons aged 65+, while it ranks  \Sexpr{ifelse(SixtyFivePRankedIHAHRJoint == "Joint","joint","")} \Sexpr{SixtyFivePRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region
+\item This IHA ranks \Sexpr{ifelse(ZeroTo14RankedIHAJoint == "Joint","joint","")} number \Sexpr{ZeroTo14RankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population that are aged 0 - 14, while it ranks \Sexpr{ifelse(ZeroTo14RankedIHAHRJoint == "Joint","joint","")} number \Sexpr{ZeroTo14RankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region
+\item This IHA ranks \Sexpr{ifelse(SixtyFivePRankedIHAJoint == "Joint","joint","")} number \Sexpr{SixtyFivePRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population that are aged 65+, while it ranks  \Sexpr{ifelse(SixtyFivePRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{SixtyFivePRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region
 \end{itemize}																																																																																		 																																																																																		  			 
 \pagebreak
 
 \section{Disability}\label{sect:Disability}
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(MalesDisabilityRankedIHAJoint == "Joint","joint","")} \Sexpr{MalesDisabilityRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of males with a disability, while it ranks \Sexpr{ifelse(MalesDisabilityRankedIHA == "Joint","joint","")} \Sexpr{MalesCarersRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
-\item This IHA ranks \Sexpr{ifelse(FemalesDisabilityRankedIHAJoint == "Joint","joint","")} \Sexpr{FemalesDisabilityRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of females with a disability, while it ranks  \Sexpr{ifelse(FemalesCarersRankedIHAHRJoint == "Joint","joint","")} \Sexpr{FemalesCarersRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(MalesDisabilityRankedIHAJoint == "Joint","joint","")} number \Sexpr{MalesDisabilityRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of males with a disability, while it ranks \Sexpr{ifelse(MalesDisabilityRankedIHA == "Joint","joint","")} number \Sexpr{MalesCarersRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(FemalesDisabilityRankedIHAJoint == "Joint","joint","")} number \Sexpr{FemalesDisabilityRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of females with a disability, while it ranks  \Sexpr{ifelse(FemalesCarersRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{FemalesCarersRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 130mm]{../figures/DisED.pdf}
-	\caption{Percentage of Population with any Disability by Age Group for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Percentage of Population with any Disability by Age Group for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 
@@ -215,7 +215,7 @@ Both Sexes & \num{\Sexpr{TotalPopEDBothSexes}} & \num{\Sexpr{EDDisWiderAllSexes$
    \hline
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/F4004}{https://data.cso.ie/table/F4004}} & 
 \end{tabular}
-\caption{Population with any Disability by Age Group for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are provided for comparison purposes.}
+\caption{Population with any Disability by Age Group for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table}
 
 \pagebreak
@@ -224,7 +224,7 @@ Both Sexes & \num{\Sexpr{TotalPopEDBothSexes}} & \num{\Sexpr{EDDisWiderAllSexes$
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = 150mm]{../figures/GenED.pdf}
-	\caption{Population Breakdown (\%) by General Health for \Sexpr{EDForTables}; Health Region and State;  Census 2022.}
+	\caption{Population Breakdown (\%) by General Health for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 
@@ -246,11 +246,11 @@ Total& \num{\Sexpr{GenLongEDBothSexes$value[GenLongEDBothSexes$General.Health ==
    \hline
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T12T3ED}{https://data.cso.ie/table/SAP2022T12T3ED}} & 
 \end{tabular}
-\caption{Population by General Health for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Population by General Health for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022. }
 \end{table}
 \pagebreak
 \begin{itemize}
-\item  This IHA ranks \Sexpr{ifelse(BadVBadHealthRankedIHAJoint == "Joint","joint","")} \Sexpr{BadVBadHealthRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population with bad or very bad General Health, while it ranks  \Sexpr{ifelse(BadVBadHealthRankedIHAHRJoint == "Joint","joint","")} \Sexpr{BadVBadHealthRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item  This IHA ranks \Sexpr{ifelse(BadVBadHealthRankedIHAJoint == "Joint","joint","")} number \Sexpr{BadVBadHealthRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population with bad or very bad General Health, while it ranks  \Sexpr{ifelse(BadVBadHealthRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{BadVBadHealthRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}
 \pagebreak
 
@@ -258,7 +258,7 @@ Total& \num{\Sexpr{GenLongEDBothSexes$value[GenLongEDBothSexes$General.Health ==
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 150mm]{../figures/CareED.pdf}
-	\caption{Carers as a Percentage of the Population of Males/Females/Both Sexes for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Carers as a Percentage of the Population of Males/Females/Both Sexes for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 	
@@ -280,23 +280,23 @@ Both Sexes & \num{\Sexpr{CarersED$TotalPop[CarersED$Sex == "Both Sexes"]}} & \nu
        \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T2ED}{https://data.cso.ie/table/SAP2022T12T2ED}} 
 \end{tabular}
 
-\caption{Carers by Sex for \Sexpr{EDForTables}; Census 2022. Percentage Breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Carers by Sex for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 
 \pagebreak
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(FemalesCarersRankedIHAJoint == "Joint","joint","")} \Sexpr{FemalesCarersRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of females that are carers, while it ranks  \Sexpr{ifelse(FemalesCarersRankedIHAHRJoint == "Joint","joint","")} \Sexpr{FemalesCarersRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
-\item This IHA ranks \Sexpr{ifelse(MalesCarersRankedIHAJoint == "Joint","joint","")} \Sexpr{MalesCarersRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of males that are carers, while it ranks  \Sexpr{ifelse(MalesCarersRankedIHAHRJoint == "Joint","joint","")} \Sexpr{MalesCarersRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(FemalesCarersRankedIHAJoint == "Joint","joint","")} number \Sexpr{FemalesCarersRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of females that are carers, while it ranks  \Sexpr{ifelse(FemalesCarersRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{FemalesCarersRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(MalesCarersRankedIHAJoint == "Joint","joint","")} number \Sexpr{MalesCarersRankedIHA}  highest out of \Sexpr{NumIHAs} regarding the percentage of males that are carers, while it ranks  \Sexpr{ifelse(MalesCarersRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{MalesCarersRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}
 \pagebreak
 \section{Volunteers}\label{sect:Volunteers}
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(VolunteersRankedIHAJoint == "Joint","joint","")} \Sexpr{VolunteersRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population that volunteer, while it ranks \Sexpr{ifelse(VolunteersRankedIHAHRJoint == "Joint","joint","")} \Sexpr{VolunteersRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(VolunteersRankedIHAJoint == "Joint","joint","")} number \Sexpr{VolunteersRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population that volunteer, while it ranks \Sexpr{ifelse(VolunteersRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{VolunteersRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}			   		 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 150mm]{../figures/VolunteerED.pdf}
-	\caption{Volunteers as a Percentage of the Population for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Volunteers as a Percentage of the Population for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 	
@@ -317,19 +317,19 @@ Both Sexes & \num{\Sexpr{CarersED$TotalPop[CarersED$Sex == "Both Sexes"]}} & \nu
        \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T7T1ED}} 
 \end{tabular}
 
-\caption{Volunteers for \Sexpr{EDForTables}; Census 2022. Percentage Breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Volunteers for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 
 \pagebreak
 
 \section{Smoking}\label{sect:Smoking}
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(SmokingRankedIHAJoint == "Joint","joint","")} \Sexpr{SmokingRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population who smoke (daily and occasionally), while it ranks  \Sexpr{ifelse(SmokingRankedIHAHRJoint == "Joint","joint","")} \Sexpr{SmokingRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(SmokingRankedIHAJoint == "Joint","joint","")} number \Sexpr{SmokingRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population who smoke (daily and occasionally), while it ranks  \Sexpr{ifelse(SmokingRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{SmokingRankedIHAHR}highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}			   																																																																																											 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 120mm]{../figures/SmokingED.pdf}
-	\caption{Percentage of the Population who Smoke Tobacco Products (Daily and Occasionally) for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Percentage of the Population who Smoke Tobacco Products (Daily and Occasionally) for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:2ae19629-1a6a-13a3-e055-000000000001}
 	\end{figure}
 	
@@ -350,7 +350,7 @@ All Persons & \Sexpr{SmokingED$`All persons`} & 100.0 & 100.0  & 100.0 \\
       \multicolumn{3}{l}{\href{https://data.cso.ie/table/SAP2022T12T4ED}{https://data.cso.ie/table/SAP2022T12T4ED}} 
 \end{tabular}
 
-\caption{Smoking Status of \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Smoking Status of \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022. }
 \end{table} 
     
   
@@ -359,7 +359,7 @@ All Persons & \Sexpr{SmokingED$`All persons`} & 100.0 & 100.0  & 100.0 \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/PESED.pdf}
-	\caption{Percentage of Population Aged 15+ by Principal Economic Status for \Sexpr{EDForTables}, Health Region and State; Census 2022.}
+	\caption{Percentage of Population Aged 15+ by Principal Economic Status for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -385,12 +385,12 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"&PESED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T8T1ED}{https://data.cso.ie/table/SAP2022T8T1ED}} &
 \end{tabular}
 
-\caption{Population aged 15+ by Principal Economic Status for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Population aged 15+ by Principal Economic Status for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022. }
 \end{table} 
 
 \pagebreak
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(UnemployedRankedIHAJoint == "Joint","joint","")} \Sexpr{UnemployedRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population that are unemployed, while it ranks  \Sexpr{ifelse(UnemployedRankedIHAHRJoint == "Joint","joint","")} \Sexpr{UnemployedRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(UnemployedRankedIHAJoint == "Joint","joint","")} number \Sexpr{UnemployedRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population that are unemployed, while it ranks  \Sexpr{ifelse(UnemployedRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{UnemployedRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}
 \pagebreak			   	  
 
@@ -398,7 +398,7 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"&PESED
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/SocialClassED.pdf}
-	\caption{Percentage of Population Aged 15+ by Social Class for \Sexpr{EDForTables}, Health Region and State; Census 2022.}
+	\caption{Percentage of Population Aged 15+ by Social Class for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -422,19 +422,19 @@ Total & \num{\Sexpr{PESED$value[PESED$Principle.Economic.Status == "Total"&PESED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T9T1ED}{https://data.cso.ie/table/SAP2022T9T1ED}} &
 \end{tabular}
 
-\caption{Population aged 15+ by Social Class for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Population aged 15+ by Social Class for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 \pagebreak
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(UnskilledRankedIHAJoint == "Joint","joint","")} \Sexpr{UnskilledRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ that are classified as unskilled, while it ranks  \Sexpr{ifelse(UnskilledRankedIHAHRJoint == "Joint","joint","")} \Sexpr{UnskilledRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
-\item This IHA ranks \Sexpr{ifelse(ProfWorkersRankedIHAJoint == "Joint","joint","")} \Sexpr{ProfWorkersRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ that are classified as professional workers, while it ranks \Sexpr{ifelse(ProfWorkersRankedIHAHRJoint == "Joint","joint","")}  \Sexpr{ProfWorkersRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(UnskilledRankedIHAJoint == "Joint","joint","")} number \Sexpr{UnskilledRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ that are classified as unskilled, while it ranks  \Sexpr{ifelse(UnskilledRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{UnskilledRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(ProfWorkersRankedIHAJoint == "Joint","joint","")} number \Sexpr{ProfWorkersRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ that are classified as professional workers, while it ranks \Sexpr{ifelse(ProfWorkersRankedIHAHRJoint == "Joint","joint","")}  number \Sexpr{ProfWorkersRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}
 \pagebreak		   		  
 \section{Education}\label{sect:Edu}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 120mm]{../figures/EduED.pdf}
-	\caption{Percentage of Population Aged 15+ by Highest Level of Education Completed for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Percentage of Population Aged 15+ by Highest Level of Education Completed for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 \begin{table}[h]	
@@ -462,12 +462,12 @@ Total & \num{\Sexpr{EduEDTable$value[EduEDTable$Highest.Level.of.Education.Compl
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T10T4ED}{https://data.cso.ie/table/SAP2022T10T4ED}} &
 \end{tabular}
 
-\caption{Population aged 15+ by Highest Level of Education Completed for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Population aged 15+ by Highest Level of Education Completed for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 \pagebreak    
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(PrimaryOrLowerRankedIHAJoint == "Joint","joint","")} \Sexpr{PrimaryOrLowerRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ with a highest level of education of Primary or lower, while it ranks \Sexpr{ifelse(PrimaryOrLowerRankedIHAHRJoint == "Joint","joint","")} \Sexpr{PrimaryOrLowerRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
-\item This IHA ranks \Sexpr{ifelse(DegreeOrHigherRankedIHAJoint == "Joint","joint","")} \Sexpr{DegreeOrHigherRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ with a highest level of education of Ordinary bachelor degree or national diploma or higher, while it ranks  \Sexpr{ifelse(DegreeOrHigherRankedIHAHRJoint == "Joint","joint","")} \Sexpr{DegreeOrHigherRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(PrimaryOrLowerRankedIHAJoint == "Joint","joint","")} number \Sexpr{PrimaryOrLowerRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ with a highest level of education of Primary or lower, while it ranks \Sexpr{ifelse(PrimaryOrLowerRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{PrimaryOrLowerRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(DegreeOrHigherRankedIHAJoint == "Joint","joint","")} number \Sexpr{DegreeOrHigherRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population aged 15+ with a highest level of education of Ordinary bachelor degree or national diploma or higher, while it ranks  \Sexpr{ifelse(DegreeOrHigherRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{DegreeOrHigherRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}
 \pagebreak			   	  
     
@@ -475,7 +475,7 @@ Total & \num{\Sexpr{EduEDTable$value[EduEDTable$Highest.Level.of.Education.Compl
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 150mm]{../figures/FamED.pdf}
-	\caption{Percentage of Families with Children by Family Type for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Percentage of Families with Children by Family Type for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 	
@@ -496,11 +496,11 @@ All Families & \num{\Sexpr{TotalFamiliesED}} & 100.0 & 100.0  & 100.0 \\
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T4T3ED}{https://data.cso.ie/table/SAP2022T4T3ED}}  &
 \end{tabular}
 
-\caption{Families with Children by Family Type for \Sexpr{EDForTables}; 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Families with Children by Family Type for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 \pagebreak
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(LoneParFamUnitRankedIHAJoint == "Joint","joint","")} \Sexpr{LoneParFamUnitRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of \textbf{family units} with a lone parent (see Detailed Tables section), while it ranks  \Sexpr{ifelse(LoneParFamUnitRankedIHAHRJoint == "Joint","joint","")} \Sexpr{LoneParFamUnitRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(LoneParFamUnitRankedIHAJoint == "Joint","joint","")} number \Sexpr{LoneParFamUnitRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of \textbf{family units} with a lone parent (see Detailed Tables section), while it ranks  \Sexpr{ifelse(LoneParFamUnitRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{LoneParFamUnitRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}			   		 
 \pagebreak
 \section{Birthplace}\label{sect:Birth}
@@ -510,7 +510,7 @@ All Families & \num{\Sexpr{TotalFamiliesED}} & 100.0 & 100.0  & 100.0 \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 130mm]{../figures/BirthED.pdf}
-	\caption{Percentage of Usually Resident Population by Birthplace for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Percentage of Usually Resident Population by Birthplace for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 	
@@ -535,7 +535,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T2T1ED}{https://data.cso.ie/table/SAP2022T2T1ED}} &
 \end{tabular}
 
-\caption{Usually Resident Population By Birthplace for \Sexpr{EDForTables}, Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Usually Resident Population By Birthplace for\Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 \pagebreak
 
@@ -543,7 +543,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/HouseholdsED.pdf}
-	\caption{Percentage of Households by Type of Occupancy for \Sexpr{EDForTables}, Health Region and State; Census 2022.}
+	\caption{Percentage of Households by Type of Occupancy for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -567,20 +567,20 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T6T3ED}{https://data.cso.ie/table/SAP2022T6T3ED}} &
 \end{tabular}
 
-\caption{Percentage of Households by Type of Occupancy for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Percentage of Households by Type of Occupancy for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 
 \pagebreak
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(LARankedIHAJoint == "Joint","joint","")} \Sexpr{LARankedIHA} out of \Sexpr{NumIHAs} regarding the percentage households that are rented from a Local Authority, while it ranks \Sexpr{ifelse(LARankedIHAHRJoint == "Joint","joint","")} \Sexpr{LARankedIHAHR} out of the IHAs in its Health Region. 
-\item This CHNranks \Sexpr{ifelse(OwnedOutrightRankedIHAJoint == "Joint","joint","")} \Sexpr{OwnedOutrightRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of households that are owned outright, while it ranks  \Sexpr{ifelse(OwnedOutrightRankedIHAHRJoint == "Joint","joint","")} \Sexpr{OwnedOutrightRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(LARankedIHAJoint == "Joint","joint","")} number \Sexpr{LARankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage households that are rented from a Local Authority, while it ranks \Sexpr{ifelse(LARankedIHAHRJoint == "Joint","joint","")} number \Sexpr{LARankedIHAHR} highest out of the IHAs in its Health Region. 
+\item This CHNranks \Sexpr{ifelse(OwnedOutrightRankedIHAJoint == "Joint","joint","")} number \Sexpr{OwnedOutrightRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of households that are owned outright, while it ranks  \Sexpr{ifelse(OwnedOutrightRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{OwnedOutrightRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}			   
 \pagebreak
 \section{Transport}\label{sect:Trans}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 120mm]{../figures/TravelED.pdf}
-	\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{EDForTables}; Health Region and State; Census 2022.}
+	\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -607,14 +607,14 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T11T1ED}{https://data.cso.ie/table/SAP2022T11T1ED}} &
 \end{tabular}
 
-\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Percentage of Usually Resident Population by Means of Travel to Work, School, College or Childcare for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 
 \pagebreak
 
 \begin{itemize}
-\item This IHA ranks \Sexpr{ifelse(OnFootBicycleRankedIHAJoint == "Joint","joint","")} \Sexpr{OnFootBicycleRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population who travel to work, school, college or childcare on foot or bicycle, while it ranks  \Sexpr{ifelse(OnFootBicycleRankedIHAHRJoint == "Joint","joint","")} \Sexpr{OnFootBicycleRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
-\item This IHA ranks \Sexpr{ifelse(CarDriverRankedIHAJoint == "Joint","joint","")} \Sexpr{CarDriverRankedIHA} out of \Sexpr{NumIHAs} regarding the percentage of the population who travel to work, school, college or childcare as a car driver, while it ranks  \Sexpr{ifelse(CarDriverRankedIHAHRJoint == "Joint","joint","")} \Sexpr{CarDriverRankedIHAHR} out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(OnFootBicycleRankedIHAJoint == "Joint","joint","")} number \Sexpr{OnFootBicycleRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population who travel to work, school, college or childcare on foot or bicycle, while it ranks  \Sexpr{ifelse(OnFootBicycleRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{OnFootBicycleRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
+\item This IHA ranks \Sexpr{ifelse(CarDriverRankedIHAJoint == "Joint","joint","")} number \Sexpr{CarDriverRankedIHA} highest out of \Sexpr{NumIHAs} regarding the percentage of the population who travel to work, school, college or childcare as a car driver, while it ranks  \Sexpr{ifelse(CarDriverRankedIHAHRJoint == "Joint","joint","")} number \Sexpr{CarDriverRankedIHAHR} highest out of \Sexpr{NumIHAHR} IHAs in its Health Region.
 \end{itemize}
 \pagebreak																																																																																																							 		  
 \section{Renewable Energy}\label{sect:RE}
@@ -624,7 +624,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 140mm]{../figures/RenewableEnergyED.pdf}
-	\caption{Percentage of Households by Renewable Energy Source for \Sexpr{EDForTables}, Health Region and State; Census 2022.}
+	\caption{Percentage of Households by Renewable Energy Source for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 	\label{fig:vbnv}
 	\end{figure}
 
@@ -643,7 +643,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
        \multicolumn{4}{l}{\href{https://data.cso.ie/table/SAP2022T6T10ED}{https://data.cso.ie/table/SAP2022T6T10ED}} &
 \end{tabular}
 
-\caption{Percentage of Households by Renewable Energy Source for \Sexpr{EDForTables}; Census 2022. Percentage breakdowns for Health Region and State are also provided for comparison purposes.}
+\caption{Percentage of Households by Renewable Energy Source for \Sexpr{ED} (IHA); \Sexpr{AC} (Health Region); and State; Census 2022.}
 \end{table} 
 
 \pagebreak
