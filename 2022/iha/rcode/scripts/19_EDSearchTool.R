@@ -18,7 +18,7 @@ library(leafem)
 EDsMap <- st_read(paste0(InputFilesLoc,"/shps/iha/iha_reprojected.shp"))
 SAPSHRLookupIHAOnly <- SAPSHRLookup%>%group_by(IHA)%>%
   filter(row_number()==1)%>%filter(Region != "State")
-CSVForHTMLWithLookup <- merge(CSVForHTMLToExport,SAPSHRLookupIHAOnly, by.x = "Health Region", by.y = "Region", all.x = T )
+CSVForHTMLWithLookup <- merge(CSVForHTMLToExport,SAPSHRLookupIHAOnly, by.x = "Region", by.y = "IHA", all.x = T )%>%filter(Region!="State")
 EDsMap <- merge(EDsMap, CSVForHTMLWithLookup, by.x = "NAME",by.y = "IHA_No", all.x = T)
 EDMapSpatial <- as_Spatial(EDsMap)
 saveRDS(EDMapSpatial, file = paste0(OutputFilesLoc,"/EDMapSpatialIHA.Rds"))

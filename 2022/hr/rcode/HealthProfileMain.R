@@ -11,8 +11,9 @@ library(kableExtra)
 library(stringi)
 library(highcharter)
 
-
+RegionType <- "HealthRegion"
 TodaysDate <- format(Sys.Date(), "%d/%m/%Y")
+TodaysDate <- gsub("/","-",TodaysDate)
 TodayForJSONLD <- format(Sys.Date(), "%Y/%m/%d/")
 
 #set up working directory, input and output folders. 
@@ -57,17 +58,15 @@ EDWGUIDAC$ACLC <- gsub(".","-",EDWGUIDAC$ACLC, fixed = T)
 
 EDWGUIDAC <- EDWGUIDAC%>%group_by(Region)%>%
   filter(row_number()==1)
-
+EDWGUIDAC$ReportLevel <- RegionType
 #Create CSV For HTML Table and EDsearch tool with links to each file
-CSVForHTML <- EDWGUIDAC%>%select("Region","IHA","CHN","EDLC","ACLC")
+CSVForHTML <- EDWGUIDAC%>%select("Region","ReportLevel","EDLC","ACLC")
 CSVForHTML$ReportNumber <- 1:nrow(CSVForHTML)
-CSVForHTML$IHA <- "Health Region level report"
-CSVForHTML$CHN <- "Health Region level report"
 
 #add links for html and pdf reports
-CSVForHTML$Report <- paste0("<a href=\"https://healthregionprofiles.cso.ie/2022/healthregion/pdf/",CSVForHTML$ReportNumber,"-",CSVForHTML$EDLC,"-",CSVForHTML$ACLC,".pdf","\"", " target=\"_blank\"", " title=\"",CSVForHTML$Region," summary report\"", ">","PDF","</a>", "  ")
+CSVForHTML$Report <- paste0("<a href=\"https://cdn.jsdelivr.net/gh/CSOIreland/edprofiles@resources/2022/health/pdf/hr/",RegionType,CSVForHTML$ReportNumber,"-",CSVForHTML$EDLC,"-",CSVForHTML$ACLC,"-WIP",TodaysDate,".pdf","\"", " target=\"_blank\"", " title=\"",CSVForHTML$Region," summary report\"", ">","PDF","</a>", "  ")
 CSVForHTML$Report <- gsub("--","-", CSVForHTML$Report) 
-CSVForHTMLToExport <- CSVForHTML%>%select("Region","IHA","CHN","Report")%>%dplyr::rename("Health Region" = "Region")
+CSVForHTMLToExport <- CSVForHTML%>%select("Region","ReportLevel","Report")
 
 write.csv(CSVForHTMLToExport, file = paste0(OutputFilesLoc, "/CSVForHTML_HR.csv"), row.names = F)
 
@@ -164,12 +163,18 @@ for (i in 1:nrow(EDWGUIDAC)) {
     setwd(paste0(getwd(),"/scripts"))
     
     #Create the .RNW file using sweave for compiling 
-    Sweave("HealthProfileTemplate.Rnw",output=gsub("--","-",paste0(i,"-",EDLC,"-",ACLC,".tex")))
+    Sweave("HealthProfileTemplate.Rnw",output=gsub("--","-",paste0(RegionType,i,"-",EDLC,"-",ACLC,"-WIP",TodaysDate,".tex")))
     #Compile the .rnw with Latex 
-    tools::texi2pdf(gsub("--","-",paste0(i,"-",EDLC,"-",ACLC,".tex")))
-    tools::texi2pdf(gsub("--","-",paste0(i,"-",EDLC,"-",ACLC,".tex")))
+    tools::texi2pdf(gsub("--","-",paste0(RegionType, i,"-",EDLC,"-",ACLC,"-WIP",TodaysDate,".tex")))
+    tools::texi2pdf(gsub("--","-",paste0(RegionType, i,"-",EDLC,"-",ACLC,"-WIP",TodaysDate,".tex")))
+    
+    # #Create the .RNW file using sweave for compiling 
+    # Sweave("HealthProfileTemplate.Rnw",output=gsub("--","-",paste0(i,"-",EDLC,"-",ACLC,".tex")))
+    # #Compile the .rnw with Latex 
+    # tools::texi2pdf(gsub("--","-",paste0(i,"-",EDLC,"-",ACLC,".tex")))
+    # tools::texi2pdf(gsub("--","-",paste0(i,"-",EDLC,"-",ACLC,".tex")))
     #EDProfile pdf Link for RMD 
-    EDLinkPDF<- paste0("<font size=\"5\"><a href=\"https://cdn.jsdelivr.net/gh/CSOIreland/edprofiles@resources/2022/health/pdf/",i,"-",EDLC,"-",ACLC,".pdf\""," style=\"text-decoration: none\">A more detailed and print friendly pdf profile - with accompanying tables - is available here.</a></font>")
+    EDLinkPDF<- paste0("<font size=\"5\"><a href=\"https://cdn.jsdelivr.net/gh/CSOIreland/edprofiles@resources/2022/health/pdf/hr/",i,"-",EDLC,"-",ACLC,".pdf\""," style=\"text-decoration: none\">A more detailed and print friendly pdf profile - with accompanying tables - is available here.</a></font>")
     EDLinkPDF <- gsub("--","-", EDLinkPDF)
     #render R Markdown  
     #rmarkdown::render("HealthProfileMarkdown.Rmd", output_file =gsub("--","-",paste0(i,"-",EDLC,"-ac-",ACLC,".html")))

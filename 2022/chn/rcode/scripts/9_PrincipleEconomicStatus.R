@@ -84,7 +84,7 @@ PESIHALessT$Principle.Economic.Status2 <- factor(PESIHALessT$Principle.Economic.
 
 # bind all tables ithout total for plot
 PESLessTAll <- bind_rows(PESEDLessT,PESIHALessT,PESACLessT,PESStateLessT)
-PESLessTAll$Region <- factor(PESLessTAll$Region, levels = c(ED,AC,"State"))
+PESLessTAll$Region <- factor(PESLessTAll$Region, levels = c(ED, IHA, AC,"State"))
 
 #plot
 PESPlot  <- ggplot(PESLessTAll , aes(fill=Region, y=PercentageOfPopulation, x=Principle.Economic.Status2)) + 

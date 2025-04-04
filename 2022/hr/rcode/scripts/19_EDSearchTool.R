@@ -18,8 +18,8 @@ library(leafem)
 EDsMap <- st_read(paste0(InputFilesLoc,"/shps/hr/hr_reprojected.shp"))
 SAPSHRLookupHROnly <- SAPSHRLookup%>%group_by(Region)%>%
   filter(row_number()==1)%>%filter(Region!="State")
-CSVForHTMLWithLookup <- merge(CSVForHTMLToExport,SAPSHRLookupHROnly, by.x = "Health Region", by.y = "Region", all.x = T )
-EDsMap <- merge(EDsMap, CSVForHTMLWithLookup, by.x = "NAME",by.y = "Health Region", all.x = T)
+CSVForHTMLWithLookup <- merge(CSVForHTMLToExport,SAPSHRLookupHROnly, by.x = "Region", by.y = "Region", all.x = T )
+EDsMap <- merge(EDsMap, CSVForHTMLWithLookup, by.x = "NAME",by.y = "Region", all.x = T)
 EDMapSpatial <- as_Spatial(EDsMap)
 saveRDS(EDMapSpatial, file = paste0(OutputFilesLoc,"/EDMapSpatialHR.Rds"))
 
