@@ -593,7 +593,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 
 
 \section{Detailed Tables}\label{sect:ST}
-\begin{table}[h]	
+\begin{table}[!h]	
 \centering
 		\begin{tabular}{KTT}
   \hline
@@ -646,7 +646,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \end{tabular}
 \end{table}
 \pagebreak
-\begin{table}[h]	
+\begin{table}[!h]	
 \centering
 		\begin{tabular}{KTT}
   \arrayrulecolor{black}\hline
@@ -722,7 +722,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \end{tabular}
 \end{table}
 \pagebreak
-\begin{table}[h]	
+\begin{table}[!h]	
 \centering
 		\begin{tabular}{KTT}
  \arrayrulecolor{black} \hline
@@ -800,7 +800,7 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \end{tabular}
 \end{table}
 \pagebreak
-\begin{table}[h]	
+\begin{table}[!h]	
 \centering
 		\begin{tabular}{KTT}
  \arrayrulecolor{black} \hline
@@ -865,4 +865,196 @@ Total & \num{\Sexpr{BirthED$value[BirthED$Location == "Total"]}} &\Sexpr{BirthED
 \arrayrulecolor{black}\hline
 \end{tabular}
 \end{table}
+\pagebreak
+\section{Census Questions}\label{sect:CQ}
+
+\textbf{Census Question for Section 2 - Population} \\
+
+Question 1.   What is your name?
+
+Question 2.   What is your sex?   Male or Female
+
+Question 3.   What is your date of birth?\\
+
+\textbf{Census Question for Section 3 - Disability} \\
+
+Question 15.  Do you have any of the following long-lasting conditions or difficulties?
+
+Each long-lasting condition/difficulty (a) to (g) below has three answer box options, mark one box for each condition from Box 1 Yes, to a great extent, Box 2 Yes, to some extent or Box 3 No.
+
+(a)          Blindness or a vision impairment
+
+(b)          Deafness or a hearing impairment
+
+(c)           A difficulty with basic physical activities such as walking, climbing stairs, reaching, lifting or carrying
+
+(d)          An intellectual disability
+
+(e)          A difficulty with learning, remembering or concentrating
+
+(f)           A psychological or emotional condition or a mental health issue
+
+(g)          A difficulty with pain, breathing or any other chronic illness or condition.\\
+
+\textbf{Census Question for Section 4 - General Health} \\
+
+Question 17. How is your health in general?
+
+1              Very good
+
+2              Good
+
+3              Fair
+
+4              Bad
+
+5              Very bad.\\
+
+\textbf{Census Question for Section 5 - Carers} \\
+
+Question 23.  Do you provide regular unpaid personal help or support to a family member, neighbour or friend with a long-term illness, health issue, an issue related to old age or disability?\\
+
+\textbf{Census Question for Section 6 - Volunteers} \\
+
+Question 24.  Do you regularly engage in helping or voluntary work in any of the following activities without pay?\\
+
+\textbf{Census Question for Section 7 - Smoking} \\
+
+Question 18.  Do you smoke tobacco products?
+
+1              Yes - daily
+
+2              Yes - occasionally
+
+3              No - have given up smoking
+
+4              Never.\\
+
+\textbf{Census Question for Section 8 - Principal Economic Status} \\
+
+Question 28. How would you describe your present principal status?
+
+1   Working for payment or profit
+
+2   Looking for first regular job
+
+3   Short-term unemployed (less than 12 months)
+
+4   Long-term unemployed (12 months or more)
+
+5   Student or pupil
+
+6   Looking after home/family
+
+7   Retired from employment
+
+8   Unable to work due to permanent sickness or disability
+
+9   Other, write in.\\
+
+\textbf{Census Question for Section 9 - Social Class} \\
+
+Social class ranks occupations by the level of skill required on a social class scale, ranging from 1 (highest) to 7 (lowest).\\
+
+\textbf{Census Question for Section 10 - Education} \\
+
+Question 27.  What is the highest level of education/training (full-time or part-time) which you have completed to date?
+
+1            No formal education/ training
+
+2            Primary education, NFQ Levels 1 or 2
+
+3            Lower Secondary, NFQ Level 3, Junior/Inter/Group Certificate
+
+4            Upper Secondary, NFQ Levels 4 or 5, Leaving Certificate
+
+5            Technical or Vocational, NFQ Levels 4 or 5
+
+6            Advanced Certificate/Completed Apprenticeship, NFQ Level 6
+
+7            Higher Certificate, NFQ Level 6,
+
+8            Ordinary Bachelor, Degree or National Diploma, NFQ Level 7
+
+9            Honours Bachelor, Degree/Professional qualification or both, NFQ Level 8
+
+10          Postgraduate Diploma or Masters' Degree, NFQ Level 9
+
+11          Doctorate (PhD) or higher, NFQ Level 10.\\
+
+\textbf{Census Question for Section 11 - Families} \\
+
+The information for families contained in this question is compiled based on the composition of the family unit determined based on other questions.\\
+
+\textbf{Census Question for Section 12 - Birthplace} \\
+
+Question 6.  What is your place of birth?\\
+
+\textbf{Census Questions for Section 13 - Households (Type of Occupancy)} \\
+
+Household Question 2.  Does your household own or rent your accommodation?
+
+1              Own with mortgage or loan
+
+2              Own outright
+
+3              Rent
+
+4              Live here rent free
+
+
+Household Question 3.    If renting, who is your landlord?
+
+1              Private landlord
+
+2              Local Authority
+
+3              Voluntary/Co-operative housing body\\
+
+\textbf{Census Question for Section 14 - Transport} \\
+
+Question 19.  How do you usually travel to work, school, college or childcare?
+
+1              Not at work, school, college or childcare
+
+2              On foot
+
+3              Bicycle
+
+4              Bus, minibus or coach
+
+5              Train, DART or LUAS
+
+6              Motorcycle or scooter
+
+7              Driving a car
+
+8              Passenger in a car
+
+9              Van
+
+10           Other (including lorry)
+
+11           Work mainly at or from home.\\
+
+\textbf{Census Question for Section 15 - Renewable Energy} \\
+
+Household Question 7.   Does your accommodation use any of the following renewable energy sources?
+ 
+1              No
+
+2              Solar panels for water heating
+
+3              Solar panels for electricity
+
+4              Wind turbine
+
+5              Air source heat pump
+
+6              Ground source heat pump
+
+7              Wood
+
+8              Other\\
+
 \end{document}
